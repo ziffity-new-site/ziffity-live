@@ -937,6 +937,7 @@ nav.navigation ul li {
   right: 0px;
   bottom: 0px;
   left: 0px;
+  pointer-events: none;
 }
 
 .page-lines-line {
@@ -944,4 +945,61 @@ nav.navigation ul li {
   top: 0px;
   bottom: 0px;
   border-right: 1px solid rgba(0,0,0,.05);
+}
+#page-lines.white .page-lines-line {
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+.page-lines-line:nth-child(1) {
+  left: 16.6666%;
+}
+.page-lines-line:nth-child(2) {
+  left: 33.3333%;
+}
+.page-lines-line:nth-child(3) {
+  left: 49.9999%;
+}
+.page-lines-line:nth-child(4) {
+  left: 66.6666%;
+}
+.page-lines-line:nth-child(5) {
+  left: 83.3333%;
+}
+/****** page scroll *********/
+#page-scroll-line {
+  position: absolute;
+  bottom: 55px;
+  left: 83.3333%;
+  height: 60px;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: opacity .15s;  
+  animation: lineanimation 2s infinite;
+  animation-delay: 2s;  
+  border-right: 1px solid rgba(255,255,255,.4);
+}
+
+
+@keyframes lineanimation {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+10% {
+    transform: scaleY(0);
+}
+30% {
+    transform: scaleY(1);
+    transform-origin: top center;
+}
+31% {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+}
+50% {
+    transform: scaleY(0);
+}
+100% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+}
 }
