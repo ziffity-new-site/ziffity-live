@@ -978,7 +978,6 @@ nav.navigation ul li {
   border-right: 1px solid rgba(255,255,255,.4);
 }
 
-
 @keyframes lineanimation {
   0% {
     transform: scaleY(0);
