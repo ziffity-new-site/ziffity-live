@@ -938,6 +938,8 @@ nav.navigation ul li {
   bottom: 0px;
   left: 0px;
   pointer-events: none;
+  max-width: 1630px;
+  margin: 0 auto;
 }
 
 .page-lines-line {
@@ -950,25 +952,17 @@ nav.navigation ul li {
   border-right: 1px solid rgba(255,255,255,.1);
 }
 .page-lines-line:nth-child(1) {
-  left: 16.6666%;
+  left: 0;
 }
+
 .page-lines-line:nth-child(2) {
-  left: 33.3333%;
-}
-.page-lines-line:nth-child(3) {
-  left: 49.9999%;
-}
-.page-lines-line:nth-child(4) {
-  left: 66.6666%;
-}
-.page-lines-line:nth-child(5) {
-  left: 83.3333%;
+  right: 0;
 }
 /****** page scroll *********/
 #page-scroll-line {
   position: absolute;
   bottom: 55px;
-  left: 83.3333%;
+  right: 0;
   height: 60px;
   transform: scaleY(0);
   transform-origin: top center;
