@@ -863,9 +863,12 @@ nav.navigation ul li {
 /************ new design *************/
 .main-text {
   position: absolute;
-  top: 50%;  
-  left:28%;
-  transform: translate(-50%,-50%);    
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 1252px;
+  margin: 0 auto;
+  width: 100%;
 }
 .main-text h1 {
   color: #fff;
@@ -948,10 +951,10 @@ nav.navigation ul li {
   position: absolute;
   top: 0px;
   bottom: 0px;
-  border-right: 1px solid rgba(0,0,0,.05);
+  border-right: 1px solid rgba(0,0,0,.09);
 }
 #page-lines.white .page-lines-line {
-  border-right: 1px solid rgba(255,255,255,.1);
+  border-right: 1px solid rgba(255,255,255,.09);
 }
 .page-lines-line:nth-child(1) {
   left: 16.6666%;
@@ -979,7 +982,7 @@ nav.navigation ul li {
   transition: opacity .15s;  
   animation: lineanimation 2s infinite;
   animation-delay: 2s;  
-  border-right: 1px solid rgba(255,255,255,.4);
+  border-right: 1px solid #ef0e34;
 }
 
 @keyframes lineanimation {
