@@ -24,7 +24,7 @@ SOFTWARE.
 
 'use strict';
 
-const canvas = document.getElementsByTagName('canvas')[0];
+const canvas =  document.getElementById('canvas');
 resizeCanvas();
 
 let config = {

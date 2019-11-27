@@ -859,9 +859,12 @@ nav.navigation ul li {
 /************ new design *************/
 .main-text {
   position: absolute;
-  top: 50%;  
-  left:28%;
-  transform: translate(-50%,-50%);    
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 1252px;
+  margin: 0 auto;
+  width: 100%;
 }
 .main-text h1 {
   color: #fff;
@@ -938,38 +941,44 @@ nav.navigation ul li {
   bottom: 0px;
   left: 0px;
   pointer-events: none;
-  max-width: 1630px;
-  margin: 0 auto;
 }
 
 .page-lines-line {
   position: absolute;
   top: 0px;
   bottom: 0px;
-  border-right: 1px solid rgba(0,0,0,.05);
+  border-right: 1px solid rgba(0,0,0,.09);
 }
 #page-lines.white .page-lines-line {
-  border-right: 1px solid rgba(255,255,255,.1);
+  border-right: 1px solid rgba(255,255,255,.09);
 }
 .page-lines-line:nth-child(1) {
-  left: 0;
+  left: 16.6666%;
 }
-
 .page-lines-line:nth-child(2) {
-  right: 0;
+  left: 33.3333%;
+}
+.page-lines-line:nth-child(3) {
+  left: 49.9999%;
+}
+.page-lines-line:nth-child(4) {
+  left: 66.6666%;
+}
+.page-lines-line:nth-child(5) {
+  left: 83.3333%;
 }
 /****** page scroll *********/
 #page-scroll-line {
   position: absolute;
   bottom: 55px;
-  right: 0;
+  left: 83.3333%;
   height: 60px;
   transform: scaleY(0);
   transform-origin: top center;
   transition: opacity .15s;  
   animation: lineanimation 2s infinite;
   animation-delay: 2s;  
-  border-right: 1px solid rgba(255,255,255,.4);
+  border-right: 1px solid #ef0e34;
 }
 
 
