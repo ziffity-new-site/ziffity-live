@@ -60,11 +60,18 @@ canvas.draw {
   overflow: hidden;
   width: 100%;
 }
+.txt-secondary {
+  color: #ef0e34;
+}
 .txt-alt {
-    color: #666;
+    color: #777;
 }
 .txt-light {
   color:#fff;
+}
+
+.bg-primary {
+  background: #000;
 }
 .d-flex {
   display: flex;
@@ -116,6 +123,7 @@ nav.navigation ul li a:hover {
   width: 90%;
   margin: 0 auto;  
 }
+
 .holder {
   max-width: 1370px;  
 }
@@ -690,12 +698,8 @@ nav.navigation ul li {
   background:rgba(0,0,0,0.5);
   opacity:1;
 }
-.fp-viewing-0 .black,
+.fp-viewing-0 .black,.fp-viewing-1 .black,
 .fp-viewing-2 .black{
-  opacity: 0;
-}
-
-.fp-viewing-1 .white{
   opacity: 0;
 }
 
@@ -703,7 +707,7 @@ nav.navigation ul li {
 .fp-viewing-2 .toggle .fg em{
   background: #ffffff;
 }
-.fp-viewing-0 .navigation  li a,
+.fp-viewing-0 .navigation  li a,.fp-viewing-1 .navigation  li a,
 .fp-viewing-2 .navigation  li a{
   color: #ffffff;
 }
@@ -1001,4 +1005,8 @@ nav.navigation ul li {
     transform: scaleY(0);
     transform-origin: bottom center;
 }
+}
+/**** what-do section *****/
+.what-do-sec h1{
+    color: #fff;
 }
