@@ -19,6 +19,51 @@ $(document).ready(function(){
     }
     bgSource(".our-works-banner .item");
 
+
+
+    $(".color-sec").each(function () {
+        var color1 = $(this).attr("data-color1");
+        var color2 = $(this).attr("data-color2");
+        $(this).css({background: 'linear-gradient(120deg, '+ color1+', '+ color2 + ')'});
+    });
+
+    $('.dynamic-background').slick({
+        autoplay:true,
+        infinite: true,
+        arrows:false,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+
+    $('.image-slider').slick({
+        autoplay:true,
+        infinite: true,
+        arrows:false,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        asNavFor: '.content-slider, .dynamic-background'
+    });
+    $('.content-slider').slick({
+        autoplay:true,
+        infinite: true,
+        arrows:true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        asNavFor: '.image-slider, .dynamic-background'
+    });
+
+
+    /*$('.service-slider').slick({
+        autoplay:true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });*/
+
     $('.our-service-blog').mouseover(function(){
         $('.our-service-blog').removeClass('active');
         $(this).addClass('active');
@@ -28,14 +73,12 @@ $(document).ready(function(){
     })   
     $('.our-works-banner').slick({
         dots: true,
-        autoplay:false,
-        autoplaySpeed: 3000,
+        dotsClass: 'slick-dots dotstyle-fall',
+        autoplay:true,
         infinite: true,
         arrows:false,
         speed: 2500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        draggable: false
+        fade: true
       }); 
     
       $('.perspective-banner').slick({
@@ -115,7 +158,7 @@ $(document).ready(function(){
             responsiveWidth:993,                
             scrollingSpeed: 500,
             navigation: true,        
-          }); 
+          });
        }
    }
 });
