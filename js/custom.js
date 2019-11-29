@@ -32,6 +32,7 @@ $(document).ready(function(){
         infinite: true,
         arrows:false,
         speed: 500,
+        autoplaySpeed: 3000,
         fade: true,
         cssEase: 'linear'
     });
@@ -41,8 +42,9 @@ $(document).ready(function(){
         infinite: true,
         arrows:false,
         speed: 500,
+        autoplaySpeed: 3000,
         fade: true,
-        cssEase: 'linear',
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
         asNavFor: '.content-slider, .dynamic-background'
     });
     $('.content-slider').slick({
@@ -50,10 +52,48 @@ $(document).ready(function(){
         infinite: true,
         arrows:true,
         speed: 500,
+        autoplaySpeed: 3000,
         fade: true,
         cssEase: 'linear',
         asNavFor: '.image-slider, .dynamic-background'
     });
+
+
+    jQuery(".content-slider").on("init", function (e, slick) {
+        var $firstAnimatingElements = jQuery(
+            ".content-slider .slick-slide:first-child"
+        ).find("[data-animation]");
+        doAnimations($firstAnimatingElements);
+        console.log('asd');
+    });
+    jQuery(".content-slider").on("beforeChange", function (
+        e,
+        slick,
+        currentSlide,
+        nextSlide
+    ) {
+        var $animatingElements = jQuery(
+            '.content-slider .slick-slide[data-slick-index="' + nextSlide + '"]'
+        ).find("[data-animation]");
+        doAnimations($animatingElements);
+    });
+
+    function doAnimations(elements) {
+        var animationEndEvents =
+            "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+        elements.each(function () {
+            var $this = jQuery(this);
+            var $animationDelay = $this.data("delay");
+            var $animationType = "animated " + $this.data("animation");
+            $this.css({
+                "animation-delay": $animationDelay,
+                "-webkit-animation-delay": $animationDelay
+            });
+            $this.addClass($animationType).one(animationEndEvents, function () {
+                $this.removeClass($animationType);
+            });
+        });
+    }
 
 
     /*$('.service-slider').slick({
@@ -157,7 +197,7 @@ $(document).ready(function(){
             scrollBar: true,
             responsiveWidth:993,                
             scrollingSpeed: 500,
-            navigation: true,        
+            navigation: false,
           });
        }
    }
