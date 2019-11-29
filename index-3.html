@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
   <link rel="stylesheet" href="css/style.css">  
-  <link rel="stylesheet" href="css/font.css" >  
-  <link rel="stylesheet" href="css/fullpage.min.css">   
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.4/jquery.fullPage.css" /> 
+  <link rel="stylesheet" href="css/fonts.css" >
+  <link rel="stylesheet" href="css/fullpage.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.4/jquery.fullPage.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>  
   <script src="js/fullpage.min.js"></script>    
@@ -53,7 +54,10 @@
                 </li>
                 <li>
                     <a href="#">Automation</a>
-                </li>                                    
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
             </ul>
         </nav>
          <div class="toggle">
@@ -76,11 +80,19 @@
                     <span class="reveal"></span>
                     <p>Agency for Digital and Beyond</p>
                 </div>
+            <div id="page-lines" class="white">
+                <div class="page-lines-line"></div>
+                <div class="page-lines-line"></div>
+                <div class="page-lines-line"></div>
+                <div class="page-lines-line"></div>
+                <div class="page-lines-line"></div>
+                <div id="page-scroll-line"></div>
+            </div>
         </section>
     <section class="section sec-space what-do-sec bg-primary">
-        <div class="holder">
+        <div class="holder-md">
             <h2 class="txt-alt text-uppercase">what we do</h2>
-            <h3 class="text-uppercase">we constantly think <br/>about better and <br/><span class="txt-secondary">creative</span> ways to solve<br/>our customer's challenges</h3>
+            <h3 class="">We blend design thinking, cutting edge technologies and marketing excellence to provide best-in-class engineering and digital solutions for your business</h3>
         </div>
     </section>
 
@@ -114,37 +126,39 @@
                     <div class="content-slider">
                         <div class="content-sec">
                             <div class="service-content">
-                                <div class="service-title">Our Services</div>
-                                <div class="service-heading">Digital</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                <a href="#" alt="">Learn More</a>
+                                <div class="service-title" data-animation="fadeInDown" data-delay="0.5s">Our Services</div>
+                                <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Digital</div>
+                                <p data-animation="fadeInDown" data-delay="1.5s">Digital transformation is the process of applying digital technologies to create or modify business processes and achieve a seamless cross-channel customer experience.</p>
+                                <a href="#" alt="" data-animation="fadeInDown" data-delay="2s">Learn More</a>
 
                             </div>
                         </div>
                         <div class="content-sec">
                             <div class="service-content">
-                                <div class="service-title">Our Services</div>
-                                <div class="service-heading">Product Engineering</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                <a href="#" alt="">Learn More</a>
+                                <div class="service-title" data-animation="fadeInDown" data-delay="0.5s">Our Services</div>
+                                <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Automation</div>
+                                <p data-animation="fadeInDown" data-delay="1.5s">Automation is one of the key technologies that’s helping businesses to increase efficiency, reduce operational costs, and improve productivity.
+                                </p>
+                                <a href="#" alt="" data-animation="fadeInDown" data-delay="2s">Learn More</a>
 
                             </div>
                         </div>
                         <div class="content-sec">
                             <div class="service-content">
-                                <div class="service-title">Our Services</div>
-                                <div class="service-heading">Digital</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                <a href="#" alt="">Learn More</a>
+                                <div class="service-title" data-animation="fadeInDown" data-delay="0.5s">Our Services</div>
+                                <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Product Engineering</div>
+                                <p data-animation="fadeInDown" data-delay="1.5s">Ziffity’s product engineering solutions aim at building high-octane SaaS products and enterprise-grade applications.</p>
+                                <a href="#" alt="" data-animation="fadeInDown" data-delay="2s">Learn More</a>
 
                             </div>
                         </div>
                         <div class="content-sec">
                             <div class="service-content">
-                                <div class="service-title">Our Services</div>
-                                <div class="service-heading">Digital</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                <a href="#" alt="">Learn More</a>
+                                <div class="service-title" data-animation="fadeInDown" data-delay="0.5s">Our Services</div>
+                                <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Cloud and DevOps</div>
+                                <p data-animation="fadeInDown" data-delay="1.5s">Blur the lines between the development and operations team in your software development ecosystem and accelerate delivery with a DevOps approach.
+                                </p>
+                                <a href="#" alt="" data-animation="fadeInDown" data-delay="2s">Learn More</a>
 
                             </div>
                         </div>
@@ -159,36 +173,86 @@
               <div class="item">
                   <img src="images/work-dynojet.jpg"/>
                   <div class="pjt-name txt-light">
-                      <h2 class="txt-light">DYNOJET</h2>
-                      <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-left-small"></span></a>
+                      <div class="holder-md">
+                          <h2>Our Works</h2>
+                          <div class="pjt-inner">
+                              <div class="prj-desc">
+
+                                  <h3 class="txt-light">DYNOJET</h3>
+                              </div>
+                              <div class="prj-link">
+                                  <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-arrow-up-right"></span></a>
+                              </div>
+                          </div>
+                      </div>
                   </div>
               </div>
               <div class="item">
                   <img src="images/work-dwell.jpg"/>
                   <div class="pjt-name txt-light">
-                      <h2 class="txt-light">DYNOJET</h2>
-                      <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-left-small"></span></a>
+                      <div class="holder-md">
+                          <h2>Our Works</h2>
+                          <div class="pjt-inner">
+                              <div class="prj-desc">
+
+                                  <h3 class="txt-light">DYNOJET</h3>
+                              </div>
+                              <div class="prj-link">
+                                  <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-arrow-up-right"></span></a>
+                              </div>
+                          </div>
+                      </div>
                   </div>
               </div>
               <div class="item">
                   <img src="images/work-dynojet.jpg"/>
                   <div class="pjt-name txt-light">
-                      <h2 class="txt-light">DYNOJET</h2>
-                      <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-left-small"></span></a>
+                      <div class="holder-md">
+                          <h2>Our Works</h2>
+                          <div class="pjt-inner">
+                              <div class="prj-desc">
+
+                                  <h3 class="txt-light">DYNOJET</h3>
+                              </div>
+                              <div class="prj-link">
+                                  <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-arrow-up-right"></span></a>
+                              </div>
+                          </div>
+                      </div>
                   </div>
               </div>
               <div class="item">
                   <img src="images/work-dwell.jpg"/>
                   <div class="pjt-name txt-light">
-                      <h2 class="txt-light">DYNOJET</h2>
-                      <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-left-small"></span></a>
+                      <div class="holder-md">
+                          <h2>Our Works</h2>
+                          <div class="pjt-inner">
+                              <div class="prj-desc">
+
+                                  <h3 class="txt-light">DYNOJET</h3>
+                              </div>
+                              <div class="prj-link">
+                                  <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-arrow-up-right"></span></a>
+                              </div>
+                          </div>
+                      </div>
                   </div>
               </div>
               <div class="item">
                   <img src="images/work-dynojet.jpg"/>
                   <div class="pjt-name txt-light">
-                      <h2 class="txt-light">DYNOJET</h2>
-                      <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-left-small"></span></a>
+                      <div class="holder-md">
+                          <h2>Our Works</h2>
+                          <div class="pjt-inner">
+                              <div class="prj-desc">
+
+                                  <h3 class="txt-light">DYNOJET</h3>
+                              </div>
+                              <div class="prj-link">
+                                  <a href="#" class="btn btn-blk-bor" tabindex="-1">CASE STUDIES <span class="icon-arrow-up-right"></span></a>
+                              </div>
+                          </div>
+                      </div>
                   </div>
               </div>
         </div>
@@ -253,14 +317,7 @@
 
 </div>
 
-<div id="page-lines" class="white">
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div id="page-scroll-line"></div>
-</div>
+
 
 <!-- partial -->
   <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js'></script>
