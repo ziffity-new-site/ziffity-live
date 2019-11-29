@@ -793,8 +793,7 @@ nav.navigation ul li {
   background: #ffffff;
 }
 }
-<<<<<<< HEAD
-=======
+
 @media only screen and (min-width: 992px) {
   .px-md-30 {
     padding-right: 30px;
@@ -931,7 +930,7 @@ nav.navigation ul li {
   padding: 0; 
   } */
 }
->>>>>>> 544daf50f0d120708bf84d2f757d7c37b7947fc7
+
 
 
 /************ new design *************/
@@ -1012,7 +1011,7 @@ nav.navigation ul li {
     width: 100%;
 }
 #page-lines {
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -1233,6 +1232,12 @@ nav.navigation ul li {
 
 .slick-slider .slick-next:before {
   content: '\e901';
+}
+
+
+
+.clientlogo-sec h4{
+  margin-bottom: 30px;
 }
 
 
