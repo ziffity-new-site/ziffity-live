@@ -31,6 +31,7 @@ h3 {
 }
 h4 {
   font-size: 40px;
+  letter-spacing: 3px;
 }
 p {
   font-size: 16px;
@@ -131,7 +132,7 @@ nav.navigation ul li a:hover {
   max-width: 920px;
 }
 .holder-md {
-  max-width: 1150px;
+  max-width: 1200px;
 }
 .holder,.holder-sm,.holder-md {
   padding:0 20px;
@@ -1113,3 +1114,67 @@ nav.navigation ul li {
     font-size: 60px;
   }
 }
+
+/****** footer section ********/
+.footer-sec .what-new {
+  position: relative;
+   max-width: 600px;
+   margin: 0 auto;
+   margin-bottom: 120px;
+}
+.footer-sec .fp-tableCell {
+  vertical-align: bottom;
+}
+.what-new span {
+  position: absolute;
+  top: -30px;
+  font-size: 18px;  
+  letter-spacing: 1.5px;
+}
+.footer-sec .what-new h4 {
+  color: #fff;
+  display: inline;  
+}
+.footer-sec .what-new a {
+  position: relative;  
+  font-size: 18px;  
+  font-style: italic;
+  margin-left: 10px;
+  text-align: left;  
+}
+.footer-sec .what-new a:after {
+  position: absolute;
+  content:'';
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;;
+  background: #ef0e34;
+}
+.footer-part {
+  background-color: #191919;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.footer-part ul  {
+  list-style-type: none;
+}
+.footer-part ul li {
+  padding-bottom: 20px;
+}
+.footer-part ul li a {
+  font-size: 16px;  
+  color: #fff;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+.footer-part ul li a:hover {
+  color: #ef0e34;
+}
+.copyright-sec {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 14px;    
+  text-align: center;
+}
+
