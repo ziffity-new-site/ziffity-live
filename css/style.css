@@ -4,6 +4,11 @@
   cursor: move;
   height: 100vh;
 }
+
+*:focus{
+  outline: none;
+}
+
 html,
 body {  
   width: 100%;
@@ -1099,14 +1104,31 @@ nav.navigation ul li {
   font-size: 16px;
   color: #ffffff;
 }
-.what-do-sec h3{
+.what-we-do-content{
     color: #fff;
     margin-top: 0;
     letter-spacing: 0;
-    font-size: 45px;
-    max-width: 800px;
+    font-size: 70px;
+    max-width: 1370px;
   width: 100%;
 }
+
+
+
+.what-we-do-content span{
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.what-we-do-content .fadeInUp {
+  opacity: 1;
+}
+
+.what-we-do-content .word-2 {
+  color: #4e4e4e;
+}
+
+
 
 .fp-viewing-2 .fullpage-wrapper ~ #page-lines #page-scroll-line {
   border-color: #ffffff;
@@ -1270,6 +1292,10 @@ nav.navigation ul li {
   margin: -1px 0px 0 -1px;
 }
 
+.cli-logo-inner:hover {
+  background: #ffffff;
+}
+
 .right-arrow {
   position: relative;
 }
@@ -1307,8 +1333,8 @@ nav.navigation ul li {
   .main-text h1 {
     font-size: 80px;
   }
-  .what-do-sec h3 {
-    font-size: 60px;
+  .what-do-sec .what-we-do-content {
+    font-size: 45px;
   }
 
   .service-inner {
