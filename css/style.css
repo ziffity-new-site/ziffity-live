@@ -796,7 +796,6 @@ nav.navigation ul li {
   background: #ffffff;
 }
 }
-
 @media only screen and (min-width: 992px) {
   .px-md-30 {
     padding-right: 30px;
@@ -935,7 +934,6 @@ nav.navigation ul li {
 }
 
 
-
 /************ new design *************/
 .main-text {
   position: absolute;
@@ -1014,7 +1012,7 @@ nav.navigation ul li {
     width: 100%;
 }
 #page-lines {
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -1236,13 +1234,52 @@ nav.navigation ul li {
 .slick-slider .slick-next:before {
   content: '\e901';
 }
-
-
-
-.clientlogo-sec h4{
-  margin-bottom: 30px;
+/****** scroll indigator ********/
+.progress-page {
+  position: fixed;
+  right: 80px;
+  bottom: 102px;
+  height: 46px;
+  width: 46px;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 1px red;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-
+.progress-page.is-active.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.scrolltotop {
+  height: 46px;
+  right: 0px;
+  bottom: 100px;
+  width: 46px;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.scrolltotop.is-active.is-visible {
+  opacity: 1;
+  bottom: 0;
+}
+.progress-page svg.progress-circle path {
+  stroke: #fff;
+  stroke-width: 3;
+  box-sizing: border-box;
+}
+.progress-page svg path {
+  fill: none;
+}
 
 .cli-logo-inner {
   padding-top: 15px;
