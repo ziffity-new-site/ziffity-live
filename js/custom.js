@@ -32,7 +32,7 @@ $(document).ready(function(){
         infinite: true,
         arrows:false,
         speed: 500,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         fade: true,
         cssEase: 'linear'
     });
@@ -42,7 +42,7 @@ $(document).ready(function(){
         infinite: true,
         arrows:false,
         speed: 500,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         fade: true,
         cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
         asNavFor: '.content-slider, .dynamic-background'
@@ -52,7 +52,7 @@ $(document).ready(function(){
         infinite: true,
         arrows:true,
         speed: 500,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         fade: true,
         cssEase: 'linear',
         asNavFor: '.image-slider, .dynamic-background'
