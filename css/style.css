@@ -534,7 +534,7 @@ nav.navigation ul li {
   bottom: -15px;
 }
 .blog-sec .blog-item-info:hover .blog-name {
-  color: #fff;
+  color: #ef0e34 ;
 }
 .blog-sec .blog-item-info:hover .blog-name:before {
   background: #ef0e34;
@@ -937,15 +937,19 @@ nav.navigation ul li {
 /************ new design *************/
 .main-text {
   position: absolute;
+  /* top: 50%; */
+  /* left: 27%; */
+  transform: translateY(-50%);
   top: 50%;
-  left: 27%;
-  transform: translate(-50%,-50%);
+  width: 100%;
   pointer-events: none;
 }
 .main-text h1 {
   color: #fff;
   letter-spacing: 10px;
   pointer-events: auto;
+  display: inline-block;
+  position: relative;
 }
 .main-text h1:after {
   position: absolute;
@@ -1325,8 +1329,21 @@ nav.navigation ul li {
 
 
 
+@media screen and (min-width: 1441px){
+  .holder-lg {
+    max-width: 1370px;
+    margin: 0 auto;
+  }
+
+}
+
+
+
 
 @media screen and (max-width: 1440px) {
+  .main-text h1 {
+    font-size: 80px;
+  }
   .what-do-sec h3 {
     font-size: 60px;
   }
@@ -1334,6 +1351,24 @@ nav.navigation ul li {
   .service-inner {
     max-width: 80%;
     margin: 0 auto;
+  }
+
+
+  .cli-logo-inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .blog-sec .sub-title {
+    margin-bottom: 40px;
+  }
+
+  .blog-sec .blog-text {
+    font-size: 14px;
+  }
+
+  .blog-sec .blog-item {
+    margin-bottom: 30px;
   }
 }
 
