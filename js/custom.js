@@ -201,4 +201,62 @@ $(document).ready(function(){
           });
        }
    }
+   /*--------------------------------------------------
+	Function Page Progress
+	---------------------------------------------------*/	
+		
+		function PageProgress() {
+	  
+			var progressPath = document.querySelector('.progress-page path');
+			var pathLength = progressPath.getTotalLength();
+			progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+			progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+			progressPath.style.strokeDashoffset = pathLength;
+			progressPath.getBoundingClientRect();
+			progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';		
+			var updateProgress = function () {
+				var scroll = $(window).scrollTop();
+				var height = $(document).height() - $(window).height();
+				var progress = pathLength - (scroll * pathLength / height);
+				progressPath.style.strokeDashoffset = progress;
+			}
+			updateProgress();
+			$(window).scroll(updateProgress);
+			
+	 }//End Page Progress	
+	 PageProgress();
+	 
+
+	/*--------------------------------------------------
+	Function FooterAppear
+	---------------------------------------------------*/	
+        FooterAppear();
+
+		function FooterAppear() {
+			
+			if( $('.main').length > 0 ){
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+				
+					if (scroll >= 300) {					
+						$(".progress-page, #page-action-holder").addClass('is-active');					
+					} else {								
+						$(".progress-page, #page-action-holder").removeClass('is-active');
+					}
+				});
+			}
+			
+			var lastScroll = 0;
+		
+			$(window).scroll(function(){
+				var scroll = $(window).scrollTop();
+				if (scroll > lastScroll) {
+					$(".progress-page, #page-action-holder").addClass("is-visible");
+				} else if (scroll < lastScroll) {
+					$(".progress-page, #page-action-holder").removeClass("is-visible");
+				}
+				lastScroll = scroll;
+			});
+	  
+	  }//End FooterAppear
 });
