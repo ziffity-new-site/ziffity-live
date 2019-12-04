@@ -78,7 +78,7 @@ $(document).ready(function(){
     });
 
     $('.dynamic-background').slick({
-        autoplay:true,
+        autoplay:false,
         infinite: true,
         arrows:false,
         speed: 500,
@@ -89,7 +89,7 @@ $(document).ready(function(){
     });
 
     $('.image-slider').slick({
-        autoplay:true,
+        autoplay:false,
         infinite: true,
         arrows:false,
         speed: 500,
@@ -99,7 +99,7 @@ $(document).ready(function(){
         asNavFor: '.content-slider, .dynamic-background'
     });
     $('.content-slider').slick({
-        autoplay:true,
+        autoplay:false,
         infinite: true,
         arrows:true,
         speed: 500,
