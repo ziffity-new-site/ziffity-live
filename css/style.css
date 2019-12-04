@@ -1059,7 +1059,7 @@ nav.navigation ul li {
     width: 100%;
 }
 #page-lines {
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -1353,7 +1353,7 @@ nav.navigation ul li {
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   height: 40px;
   right: 0px;
   bottom: 100px;
