@@ -20,6 +20,52 @@ $(document).ready(function(){
     bgSource(".our-works-banner .item");
 
 
+   /* var arr = $(".what-do-sec h3").text().split(" ");
+    var html="";
+    for (i = 0; i < arr.length; ++i) {
+        html+= "<span>"+arr[i]+"</span>";
+    }
+    $(".what-do-sec h3").html(html);*/
+
+
+    /*var spanInserted = $('.what-do-sec h3').html().split(" ").join(" </span><span>");
+    var wrapped = ("<span>").concat(spanInserted, "</span>");
+    $('.what-do-sec h3').html(wrapped);
+    var refPos = $('.what-do-sec h3 span:first-child').position().top;
+    var newPos;
+    $('.what-do-sec h3 span').each(function(index) {
+        newPos = $(this).position().top;
+        if (index == 0){
+            return;
+        }
+        if (newPos == refPos){
+            $(this).prepend($(this).prev().text() + " ");
+            $(this).prev().remove();
+        }
+        refPos = newPos;
+    });*/
+
+    $('.what-we-do-content .content-inner').each(function(){
+        var text = $(this).text().split(' ');
+
+        for( var i = 0, len = text.length; i < len; i++ ) {
+            text[i] = '<span class="word-' + i + '">' + text[i] + '</span>';
+        }
+        $(this).html(text.join(' '));
+
+    });
+
+    $('.what-we-do-content span').each(function(index) {
+        var _this = this;
+        setTimeout(function() {
+            $(_this).addClass('fadeInUp');
+            setTimeout(function() {
+                $(_this).addClass('color');
+            }, 2000 * index);
+        }, 500 * index);
+    });
+
+
 
     $(".color-sec").each(function () {
         var color1 = $(this).attr("data-color1");
@@ -34,6 +80,7 @@ $(document).ready(function(){
         speed: 500,
         autoplaySpeed: 5000,
         fade: true,
+        draggable: false,
         cssEase: 'linear'
     });
 
@@ -64,7 +111,6 @@ $(document).ready(function(){
             ".content-slider .slick-slide:first-child"
         ).find("[data-animation]");
         doAnimations($firstAnimatingElements);
-        console.log('asd');
     });
     jQuery(".content-slider").on("beforeChange", function (
         e,
