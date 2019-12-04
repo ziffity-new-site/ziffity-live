@@ -49,21 +49,25 @@ $(document).ready(function(){
         var text = $(this).text().split(' ');
 
         for( var i = 0, len = text.length; i < len; i++ ) {
-            text[i] = '<span class="word-' + i + '">' + text[i] + '</span>';
+            text[i] = '<span>' + text[i] + '</span>';
         }
         $(this).html(text.join(' '));
 
     });
 
-    $('.what-we-do-content span').each(function(index) {
-        var _this = this;
-        setTimeout(function() {
-            $(_this).addClass('fadeInUp');
-            setTimeout(function() {
-                $(_this).addClass('color');
-            }, 2000 * index);
-        }, 500 * index);
+
+    $('.what-we-do-content .content-inner span').each(function(index){
+        $(this).addClass('wow fadeInUp').addClass('word-'+index).attr("data-wow-delay", 0.5 + index*0.5 +'s');
     });
+
+    $(' .logo-sec > .cli-logo-inner ').each( function() {
+        $(this).hoverdir({
+            hoverDelay : 75
+        });
+    }).hover(function(){
+        $(this).toggleClass('active');
+    });
+
 
 
 
@@ -224,7 +228,19 @@ $(document).ready(function(){
     
     $('.site-layer').click(function(){
         $('body').removeClass('open-menu');
-    })  
+    })
+
+    wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+    );
+    wow.init();
+
    //global variables
    var responsiveflag = false;
 
@@ -244,7 +260,7 @@ $(document).ready(function(){
             scrollBar: true,
             responsiveWidth:993,                
             scrollingSpeed: 500,
-            navigation: false,
+            navigation: false
           });
        }
    }
