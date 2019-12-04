@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f5ec61-b804-4562-ac93-e8c129b236e8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.onepage-scroll.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-aao.png" afterPath="$PROJECT_DIR$/images/logo-aao.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-armstrong-garden-centers.png" afterPath="$PROJECT_DIR$/images/logo-armstrong-garden-centers.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-dwell.png" afterPath="$PROJECT_DIR$/images/logo-dwell.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-dynojet.png" afterPath="$PROJECT_DIR$/images/logo-dynojet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-expressmed.png" afterPath="$PROJECT_DIR$/images/logo-expressmed.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-franklinempire.png" afterPath="$PROJECT_DIR$/images/logo-franklinempire.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-frenchtoast.png" afterPath="$PROJECT_DIR$/images/logo-frenchtoast.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-globalindustrial.png" afterPath="$PROJECT_DIR$/images/logo-globalindustrial.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-guidence.png" afterPath="$PROJECT_DIR$/images/logo-guidence.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-kravetinc.png" afterPath="$PROJECT_DIR$/images/logo-kravetinc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-kurtgeiger.png" afterPath="$PROJECT_DIR$/images/logo-kurtgeiger.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-mw-industries.png" afterPath="$PROJECT_DIR$/images/logo-mw-industries.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-norcalgroup.png" afterPath="$PROJECT_DIR$/images/logo-norcalgroup.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-partysupplyusa.png" afterPath="$PROJECT_DIR$/images/logo-partysupplyusa.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-scrubs-beyond.png" afterPath="$PROJECT_DIR$/images/logo-scrubs-beyond.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-shopcsntv.png" afterPath="$PROJECT_DIR$/images/logo-shopcsntv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-sustainablesupply.png" afterPath="$PROJECT_DIR$/images/logo-sustainablesupply.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-sweda.png" afterPath="$PROJECT_DIR$/images/logo-sweda.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-tahari-arthur-s-levine.png" afterPath="$PROJECT_DIR$/images/logo-tahari-arthur-s-levine.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-uselectrical.png" afterPath="$PROJECT_DIR$/images/logo-uselectrical.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-vetsource.png" afterPath="$PROJECT_DIR$/images/logo-vetsource.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo-vntghome.png" afterPath="$PROJECT_DIR$/images/logo-vntghome.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-3.html" afterPath="$PROJECT_DIR$/index-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-4.html" afterPath="$PROJECT_DIR$/index-4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/custom.js" afterPath="$PROJECT_DIR$/js/custom.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="1179" column="17" lean-forward="false" selection-start-line="1179" selection-start-column="17" selection-end-line="1179" selection-end-column="17" />
+            <state relative-caret-position="321">
+              <caret line="1171" column="17" lean-forward="false" selection-start-line="1171" selection-start-column="17" selection-end-line="1171" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -129,7 +102,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -205,10 +178,10 @@
         <option value="$PROJECT_DIR$/js/particles.js" />
         <option value="$PROJECT_DIR$/css/font.css" />
         <option value="$PROJECT_DIR$/js/jquery.hoverdir.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index-4.html" />
         <option value="$PROJECT_DIR$/index-3.html" />
         <option value="$PROJECT_DIR$/js/custom.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -324,7 +297,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83209000" />
+    <option name="totallyTimeSpent" value="83937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="-11" width="1889" height="1092" extended-state="6" />
@@ -737,14 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="1179" column="17" lean-forward="false" selection-start-line="1179" selection-start-column="17" selection-end-line="1179" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index-4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -768,6 +733,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="59" column="91" lean-forward="false" selection-start-line="59" selection-start-column="90" selection-end-line="59" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="1171" column="17" lean-forward="false" selection-start-line="1171" selection-start-column="17" selection-end-line="1171" selection-end-column="17" />
           <folding />
         </state>
       </provider>
