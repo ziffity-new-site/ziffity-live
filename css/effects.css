@@ -1,9 +1,9 @@
 .data-text {
     position: relative;
 }
-.data-text:before {
-    color: #ef0e34;
+.data-text:before {    
     position: absolute;
+    color: #ef0e34;
     text-transform: uppercase;
     content: attr(data-text);
     left: 0;

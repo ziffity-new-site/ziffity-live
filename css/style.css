@@ -114,9 +114,7 @@ body > .dg {
 a {
   display: inline-block;
 }
-nav.navigation ul li a:hover {
-  color: #ef0e34;
-}
+
 .sec-space {
   margin-bottom: 70px;
 }
@@ -790,9 +788,27 @@ nav.navigation ul li {
     padding-right: 0;
   }
   nav.navigation ul li a{     
-    color: #000;
+    color: #fff;
     transition: color 0.5s ease;
     position: relative;
+    overflow: hidden;
+  }  
+  nav.navigation li a span{
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }  
+  nav.navigation li a span:after{
+    position: absolute;
+    top: 100%;
+    left: 0;  
+    content: attr(data-hover);    
+    transform: translate3d(0,0,0);     
+  }
+  nav.navigation ul li a:hover span{     
+    transform: translateY(-100%);
   }  
   nav.navigation ul li a:before,nav.navigation ul li a:after {
     position: absolute;
@@ -814,7 +830,12 @@ nav.navigation ul li {
     -webkit-transition: width .5s ease;
     transition: width .5s ease;   
    }
- 
+ .nav-link.brands_active {
+   color: #fff;
+ }
+ .nav-link.brands_n_active {
+   color: #d7dded;
+ }
   .open-menu nav.navigation {
     margin-left: -50px;
   }
@@ -1051,7 +1072,6 @@ nav.navigation ul li {
   letter-spacing: 1.5px;
   padding-top: 30px;
 }
-
 #page-lines {
   position: absolute;
   top: 0px;
@@ -1715,9 +1735,6 @@ nav.navigation ul li {
   } */
 }
 
-.home .navigation  li a {
-  color: #ffffff;
-}
 
 .home .logo-wrap .black {
   display: none;
