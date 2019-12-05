@@ -2,6 +2,7 @@
     position: relative;
 }
 .data-text:before {
+    color: #ef0e34;
     position: absolute;
     text-transform: uppercase;
     content: attr(data-text);
@@ -12,9 +13,31 @@
     width: 0;
 }
 .data-text:hover:before {
-    color: #ef0e34;
     transform: none;
     width: 100%;
+}
+
+
+/* line effect */
+
+.line-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.line-effect:before {
+    position: absolute;
+    overflow: hidden;
+    content:'';
+    transform: translateX(-100%);
+    bottom: 8px;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transition: all 0.5s ease;
+}
+.line-effect:hover:before {
+    transform: translateX(100%);
 }
 
 
