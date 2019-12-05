@@ -391,9 +391,13 @@ nav.navigation ul li {
 }
 
 
+.our-works-sec .pjt-name  .prj-desc {
+  max-width: 800px;
+}
+
 .our-works-sec .pjt-name  .prj-desc p {
-  max-width: 500px;
   color: #ffffff;
+  max-width: 500px;
 }
 
 .our-works-sec .pjt-name h2 {
@@ -406,7 +410,7 @@ nav.navigation ul li {
 }
 
 .our-works-sec .pjt-name h3 {
-  font-size: 65px;
+  font-size: 50px;
   text-transform: uppercase;
   font-family: 'din-condensed', sans-serif;
   margin-top: 0px;
