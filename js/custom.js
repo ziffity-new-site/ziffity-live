@@ -191,42 +191,28 @@ $(document).ready(function(){
         fade: true
       }); 
     
-      $('.perspective-banner').slick({
-        dots:false,
-        autoplay:false,
-        autoplaySpeed: 3000,
-        prevArrow: ".our-perspective-sec .prev",
-        nextArrow: ".our-perspective-sec .next",
-        infinite: true,               
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.text-slider'
-      }); 
-      $('.text-slider').slick({
+      $('.blog-slider').slick({
+        dotsClass: 'slick-dots dotstyle-dotstroke',
         dots:false,
         arrows:false,
         autoplay:false,
         autoplaySpeed: 3000,
-        infinite: true,
-        fade:true,        
+        infinite: true,               
         speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.perspective-banner',
+        slidesToShow: 3,
+        slidesToScroll: 3,
+          responsive: [
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true
+                  }
+              }]
       }); 
-      $('.testimonial-banner').slick({
-        dots:false,
-        autoplay:false,
-        autoplaySpeed: 3000,
-        infinite: true,
-        fade:true,
-        prevArrow: ".testimonial-sec .prev",
-        nextArrow: ".testimonial-sec .next",
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }); 
+
       
     //   $(".main").onepage_scroll({
     //     sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -268,16 +254,16 @@ $(document).ready(function(){
    $(window).resize(responsiveResize);
 
    function responsiveResize() {
-       if (($(window).width()) <= 1199 && responsiveflag == false)
+       if (($(window).width()) <= 767 && responsiveflag == false)
        {           
            responsiveflag = true;
            fullpage_api.destroy('all');
        }
-       else if (($(window).width()) >= 1200)
+       else if (($(window).width()) >= 768)
        {
         $('.main').fullpage({
             scrollBar: true,
-            responsiveWidth:993,                
+            responsiveWidth:767,
             scrollingSpeed: 500,
             navigation: false
           });
@@ -339,6 +325,13 @@ $(document).ready(function(){
 				}
 				lastScroll = scroll;
 			});
+
+			$('.scrolltotop').on('click', function(){
+			    $('html, body').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            })
 	  
 	  }//End FooterAppear
 });
