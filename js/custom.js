@@ -49,7 +49,7 @@ $(document).ready(function(){
         var text = $(this).text().split(' ');
 
         for( var i = 0, len = text.length; i < len; i++ ) {
-            text[i] = '<span>' + text[i] + '</span>';
+            text[i] = '<span data-text="'+ text[i] +'">' + text[i] + '</span>';
         }
         $(this).html(text.join(' '));
 
@@ -76,6 +76,20 @@ $(document).ready(function(){
         var color2 = $(this).attr("data-color2");
         $(this).css({background: 'linear-gradient(120deg, '+ color1+', '+ color2 + ')'});
     });
+
+
+    /*$(document).ready(function() {
+        var movementStrength = 25;
+        var height = movementStrength / $(window).height();
+        var width = movementStrength / $(window).width();
+        $("#top-image").mousemove(function(e){
+            var pageX = e.pageX - ($(window).width() / 2);
+            var pageY = e.pageY - ($(window).height() / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            var newvalueY = height * pageY * -1 - 50;
+            $('#top-image').css("background-position", newvalueX+"px     "+newvalueY+"px");
+        });
+    });*/
 
     $('.dynamic-background').slick({
         autoplay:false,
@@ -163,7 +177,7 @@ $(document).ready(function(){
     })   
     $('.our-works-banner').slick({
         dots: true,
-        dotsClass: 'slick-dots dotstyle-fall',
+        dotsClass: 'slick-dots dotstyle-dotstroke',
         autoplay:true,
         infinite: true,
         arrows:false,
