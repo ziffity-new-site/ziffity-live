@@ -392,11 +392,12 @@ nav.navigation ul li {
 
 
 .our-works-sec .pjt-name  .prj-desc {
-  max-width: 500px;
+  max-width: 800px;
 }
 
 .our-works-sec .pjt-name  .prj-desc p {
   color: #ffffff;
+  max-width: 500px;
 }
 
 .our-works-sec .pjt-name h2 {
