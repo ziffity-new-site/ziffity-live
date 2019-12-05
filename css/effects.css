@@ -17,6 +17,34 @@
     width: 100%;
 }
 
+
+/* data text -transform */
+
+.data-transform{
+    color: #fff;
+    transition: color 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+.data-transform span{
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+.data-transform span:before{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: attr(data-hover);
+    transform: translate3d(0,0,0);
+}
+.data-transform:hover span{
+    transform: translateY(-100%);
+}
+
+
 .btn-flash {
     position: relative;
     overflow: hidden;
@@ -204,5 +232,6 @@
 }
 
 .dotstyle-dotstroke li.slick-active {
-    box-shadow: 0 0 0 2px #ef0e34;
+    box-shadow: 0 0 0 2px rgba(239, 14, 52, 0.3);
+    background: rgba(239, 14, 52, 0.3);
 }
