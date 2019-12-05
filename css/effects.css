@@ -1,0 +1,128 @@
+.data-text {
+    position: relative;
+}
+.data-text:before {
+    position: absolute;
+    text-transform: uppercase;
+    content: attr(data-text);
+    left: 0;
+    height: 100%;
+    transition: all 1.2s ease;
+    overflow: hidden;
+    width: 0;
+}
+.data-text:hover:before {
+    color: #ef0e34;
+    transform: none;
+    width: 100%;
+}
+
+
+/* Fall */
+
+.dotstyle-dotstroke li,
+.dotstyle-fall li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 8px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+.dotstyle-dotstroke li button,
+.dotstyle-fall li button {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    text-indent: -999em; /* make the text accessible to screen readers */
+    cursor: pointer;
+    position: absolute;
+}
+
+
+.dotstyle-dotstroke li button:focus,
+.dotstyle-fall li button:focus {
+    outline: none;
+}
+
+.dotstyle-fall li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    background-color: #c44d48;
+    border-radius: 50%;
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+    -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.dotstyle-fall li button {
+    -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.dotstyle-fall li:hover button,
+.dotstyle-fall li button:focus,
+.dotstyle-fall li.slick-active button {
+    background-color: #fff;
+}
+
+.dotstyle-fall li.slick-active::after {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.dotstyle-fall li.slick-active button {
+    opacity: 0;
+    -webkit-transform: translateY(200%);
+    transform: translateY(200%);
+}
+
+
+/* Small dot with stroke */
+
+.dotstyle-dotstroke li {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+    -webkit-transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.dotstyle-dotstroke li button {
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dotstyle-dotstroke li button:hover,
+.dotstyle-dotstroke li button:focus,
+.dotstyle-dotstroke li.slick-active a {
+    background-color: white
+}
+
+.dotstyle-dotstroke li.slick-active button {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+    background: #ef0e34;
+}
+
+.dotstyle-dotstroke li.slick-active {
+    box-shadow: 0 0 0 2px #ef0e34;
+}
