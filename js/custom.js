@@ -68,7 +68,12 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
 
-
+    $(".nav-link").mouseover(function(){
+        $(".nav-link").removeClass("brands_active").addClass("brands_n_active");
+        $(this).removeClass( "brands_n_active").addClass("brands_active");
+    }).mouseout(function(){
+        $(".nav-link").removeClass( "brands_n_active").removeClass("brands_active");
+    });
 
 
     $(".color-sec").each(function () {

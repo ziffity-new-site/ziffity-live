@@ -1,8 +1,9 @@
 .data-text {
     position: relative;
 }
-.data-text:before {
+.data-text:before {    
     position: absolute;
+    color: #ef0e34;
     text-transform: uppercase;
     content: attr(data-text);
     left: 0;
@@ -11,8 +12,7 @@
     overflow: hidden;
     width: 0;
 }
-.data-text:hover:before {
-    color: #ef0e34;
+.data-text:hover:before {    
     transform: none;
     width: 100%;
 }
