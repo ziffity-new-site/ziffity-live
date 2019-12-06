@@ -60,6 +60,18 @@ $(document).ready(function(){
         $(this).addClass('wow fadeInUp').addClass('word-'+index).attr("data-wow-delay", 0.5 + index*0.5 +'s');
     });
 
+
+    var delay = $('.what-we-do-content span').last().attr('data-wow-delay');
+    var delayTime = parseFloat(delay);
+    var time = delayTime + 2.0;
+    if($('.what-we-do-content span').last().attr('data-wow-delay') === delay ) {
+        setTimeout(function(){
+            $('.what-we-do-content .content-inner span').addClass('active');
+        }, time*1000);
+
+    }
+
+
     $(' .logo-sec > .cli-logo-inner ').each( function() {
         $(this).hoverdir({
             hoverDelay : 75
