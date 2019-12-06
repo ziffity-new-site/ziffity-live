@@ -1184,10 +1184,10 @@ nav.navigation ul li {
   color: #4e4e4e;
 }
 
-.what-we-do-content .word-2:hover,
-.what-we-do-content .word-3:hover,
-.what-we-do-content .word-7:hover,
-.what-we-do-content .word-9:hover{
+.what-we-do-content .content-inner .word-2.active:hover,
+.what-we-do-content .content-inner .word-3.active:hover,
+.what-we-do-content .content-inner .word-7.active:hover,
+.what-we-do-content .content-inner .word-9.active:hover{
   color: #ef0e34;
   text-shadow: 0px 0px 25px #ef0e34;
 }
