@@ -1173,13 +1173,14 @@ nav.navigation ul li {
 .what-we-do-content .content-inner span {
   font-family: 'din-condensed', sans-serif;
   text-transform: uppercase;
-  transition: all 0.5s ease 0s;
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
 }
 
-.what-we-do-content .word-2,
-.what-we-do-content .word-3,
-.what-we-do-content .word-7,
-.what-we-do-content .word-9 {
+.what-we-do-content .content-inner .word-2.active,
+.what-we-do-content .content-inner .word-3.active,
+.what-we-do-content .content-inner .word-7.active,
+.what-we-do-content .content-inner .word-9.active {
   color: #4e4e4e;
 }
 
