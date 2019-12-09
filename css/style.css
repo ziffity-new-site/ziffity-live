@@ -384,15 +384,15 @@ nav.navigation ul li {
 
 .line-1:before,
 .line-2:before{
-  border-top: 1px solid rgba(255,255,255,0.3);
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   transform: scale3d(0, 1, 1);
 }
 
 .line-1:after,
 .line-2:after{
-  border-left: 1px solid rgba(255,255,255,0.3);
-  border-right: 1px solid rgba(255,255,255,0.3);
+  border-left: 1px solid rgba(255,255,255,0.2);
+  border-right: 1px solid rgba(255,255,255,0.2);
   transform: scale3d(1, 0, 1);
 }
 
@@ -1093,6 +1093,13 @@ nav.navigation ul li {
   pointer-events: none;
 }
 
+.page-lines {
+  max-width: 1340px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+}
+
 .page-lines-line {
   position: absolute;
   top: 0px;
@@ -1103,19 +1110,19 @@ nav.navigation ul li {
   border-right: 1px solid rgba(255,255,255,.08);
 }
 .page-lines-line:nth-child(1) {
-  left: 16.6666%;
+  left: 0%;
 }
 .page-lines-line:nth-child(2) {
-  left: 33.3333%;
+  left: 25%;
 }
 .page-lines-line:nth-child(3) {
-  left: 49.9999%;
+  left: 50%;
 }
 .page-lines-line:nth-child(4) {
-  left: 66.6666%;
+  left: 75%;
 }
 .page-lines-line:nth-child(5) {
-  left: 83.3333%;
+  left: 100%;
 }
 /****** page scroll *********/
 #page-scroll-line {
@@ -1454,7 +1461,7 @@ nav.navigation ul li {
 
 
 
-@media screen and (min-width: 1441px){
+@media screen and (min-width: 1350px){
   .holder-lg {
     max-width: 1370px;
     margin: 0 auto;
