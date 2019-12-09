@@ -365,8 +365,8 @@ nav.navigation ul li {
 }
 
 .line-2 {
-  right: 0;
-  bottom: 0;
+  right: 1px;
+  bottom: 1px;
   top: auto;
 }
 
@@ -384,15 +384,15 @@ nav.navigation ul li {
 
 .line-1:before,
 .line-2:before{
-  border-top: 1px solid rgba(255,255,255,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   transform: scale3d(0, 1, 1);
 }
 
 .line-1:after,
 .line-2:after{
-  border-left: 1px solid rgba(255,255,255,0.2);
-  border-right: 1px solid rgba(255,255,255,0.2);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  border-right: 1px solid rgba(255,255,255,0.1);
   transform: scale3d(1, 0, 1);
 }
 
