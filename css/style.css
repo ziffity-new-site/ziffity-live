@@ -38,6 +38,12 @@ h4 {
   font-size: 40px;
   letter-spacing: 3px;
 }
+h5 {
+  font-size: 30px;
+}
+h6 {
+  font-size: 20px;
+}
 p {
   font-size: 16px;
   color: #000;
@@ -184,11 +190,13 @@ a {
 .black-logo {
   display: none;
 }
-header {
+.home header {
   background: transparent;
   transition: all 0.3s ease;
 }
-
+header {
+  background: #0e0e0e;
+}
 .open-menu  .toggle .fg em:first-child {
   display: none;
 }
@@ -240,6 +248,12 @@ header .container:before,header .container:after {
   color: #fff;
   background: #000;
 }
+.btn-white {
+  border-color: #fff;
+  color: #000;
+  background: #fff;
+  font-weight: 400;
+}
 .btn-blk-bor:hover {
   color: #000;
   background: transparent;
@@ -275,6 +289,9 @@ a, a:active, a:focus,a:hover {
 }
 .open-menu .site-layer {
   display: block;
+}
+.mb-0 {
+  margin-bottom: 0;
 }
 /******* common ***********/
 .sub-head p{
@@ -1435,9 +1452,6 @@ nav.navigation ul li {
 .right-arrow {
   position: relative;
 }
-
-
-
 .right-arrow:before {
   content: '\e901';
   font-family: 'ziffity';
@@ -1451,7 +1465,79 @@ nav.navigation ul li {
 .right-arrow:hover:before {
   transform: rotate(-45deg);
 }
-
+/******* platform page ********/
+.platform-page {
+   padding-top: 200px;
+}
+.platform-page h3 {
+  max-width: 992px;
+  margin-bottom: 30px;
+}
+.platform-page p {
+  font-size: 18px;
+}
+.platform-page .platforms-sec {
+  margin: 50px 0;
+}
+.platform-page .platform-name {
+  position: relative;
+  background: #fff;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+.platform-page .platform-name:before,
+.platform-page .platform-name:after {
+  position: absolute;
+  content: '';  
+  bottom: 0;
+  width: 0;
+  height: 5px;  
+  background: #f26322;
+  transition: all 0.5s ease;
+}
+.platform-page .platform-name:before{
+  left: 0;
+}
+.platform-page .platform-name:after{
+  right: 0;
+}
+.platform-name .go-to-platform {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.go-to-platform .icon-arrow-right {
+  font-size: 20px;
+}
+.platform-page .platform-name:hover:before,
+.platform-page .platform-name:hover:after{
+  width: 50%;
+}  
+.platform-name:hover .go-to-platform{
+  opacity: 1;
+}
+.contact-info h5 {
+  font-size: 20px;
+}
+.contact-part {
+  background:url('../images/bg-spider-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 175px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
 
 
 @media screen and (min-width: 1441px){
@@ -1483,9 +1569,6 @@ nav.navigation ul li {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
-
-
   .blog-sec .blog-text {
     font-size: 14px;
   }
@@ -1738,11 +1821,22 @@ nav.navigation ul li {
   .video-sec .video-content { 
     height: 300px; 
 }
+.platform-name .go-to-platform {
+  opacity: 1;
+}
   
 }
 @media only screen and (max-width: 767px) {
   .our-service-blog:nth-child(3){
     margin-bottom: 40px;
+  }
+  .contact-part {
+    height: 200px;
+    display: block;
+    padding: 20px;
+  }
+  .platforms-sec .row>div {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1776,8 +1870,7 @@ nav.navigation ul li {
   padding: 0; 
   } */
 }
-
-
-.home .logo-wrap .black {
+.logo-wrap .black {
   display: none;
 }
+
