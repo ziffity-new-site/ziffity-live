@@ -1640,7 +1640,7 @@ nav.navigation ul li {
 
 .footer-part {
   background-color: #191919;
-  padding: 100px 0 80px 0;  
+  padding: 50px 0 50px 0;
 }
 .footer-part .row {
   display: flex;
@@ -1648,12 +1648,13 @@ nav.navigation ul li {
 }
 .footer-part ul  {
   list-style-type: none;
+  margin-bottom: 0;
 }
 .footer-part ul li {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .footer-part ul li a {
-  font-size: 16px;  
+  font-size: 14px;
   color: #fff;
   text-align: left;
   transition: all 0.5s ease;
