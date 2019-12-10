@@ -1491,6 +1491,7 @@ nav.navigation ul li {
   background: #fff;
   padding: 50px;
   margin-bottom: 30px;
+  display: block;
 }
 .platform-page .platform-name:before,
 .platform-page .platform-name:after {
@@ -1527,13 +1528,13 @@ nav.navigation ul li {
 .platform-page .platform-name:hover:after{
   width: 50%;
 }  
-.platform-name:hover .go-to-platform{
+.platform-name:hover .go-to-platform {
   opacity: 1;
 }
 .contact-info h5 {
   font-size: 20px;
 }
-.contact-part {
+.contact-part {  
   background:url('../images/bg-spider-banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -1552,7 +1553,6 @@ nav.navigation ul li {
     max-width: 1370px;
     margin: 0 auto;
   }
-
 }
 
 
