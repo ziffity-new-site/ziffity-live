@@ -1523,13 +1523,6 @@ nav.navigation ul li {
   display: inline;  
 }
 
-.footer-sec .what-new h4:after {
-  content: '.';
-  font-family: 'acumin-pro', sans-serif;
-  font-size: 18px;
-  margin-left: 1px;
-}
-
 .footer-sec .what-new a {
   position: relative;  
   font-size: 18px;
@@ -1538,6 +1531,7 @@ nav.navigation ul li {
   text-align: left;
   font-family: 'acumin-pro', sans-serif;
   text-transform: none;
+  letter-spacing: normal;
 }
 .footer-sec .what-new a:before,
 .footer-sec .what-new a:after{
