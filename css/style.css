@@ -1145,7 +1145,7 @@ nav.navigation ul li {
 #page-scroll-line {
   position: absolute;
   bottom: 55px;
-  left: 83.3333%;
+  left: 100%;
   height: 60px;
   transform: scaleY(0);
   transform-origin: top center;
@@ -1154,6 +1154,11 @@ nav.navigation ul li {
   animation-delay: 2s;  
   border-right: 1px solid #ef0e34;
 }
+
+.main section:not(.banner-section) ~ #page-lines #page-scroll-line {
+  display: none;
+}
+
 
 @keyframes lineanimation {
   0% {
