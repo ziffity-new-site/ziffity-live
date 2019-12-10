@@ -2,6 +2,14 @@ $(document).ready(function(){
     $('.toggle').click(function(){
         $('body').toggleClass('open-menu');
     }); 
+    $(window).scroll(function(){
+        if($(this).scrollTop()>150) {
+            $('body').addClass('sticky');
+        }
+        else {
+            $('body').removeClass('sticky');
+        }
+    });
     /**** our works loop */
     function bgSource(imgcontainer) {
         $(imgcontainer).each(function() {
@@ -273,7 +281,7 @@ $(document).ready(function(){
        }
        else if (($(window).width()) >= 768)
        {
-        $('.main').fullpage({
+        $('.home .main').fullpage({
             scrollBar: true,
             responsiveWidth:767,
             scrollingSpeed: 500,
