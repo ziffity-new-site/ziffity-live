@@ -1640,7 +1640,7 @@ nav.navigation ul li {
 
 .footer-part {
   background-color: #191919;
-  padding: 50px 0 50px 0;
+  padding: 50px 0 30px 0;
 }
 .footer-part .row {
   display: flex;
@@ -1669,8 +1669,8 @@ nav.navigation ul li {
 
 
 .copyright-sec {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-size: 14px;    
   text-align: center;
 }
