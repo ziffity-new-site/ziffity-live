@@ -1557,13 +1557,12 @@ nav.navigation ul li {
 
 
 
-
 @media screen and (max-width: 1440px) {
   .main-text h1 {
     font-size: 80px;
   }
   .what-do-sec .what-we-do-content {
-    font-size: 45px;
+    font-size: 65px;
   }
 
   .service-inner {
@@ -1582,6 +1581,11 @@ nav.navigation ul li {
 
   .blog-sec .blog-item {
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .what-do-sec .what-we-do-content {
+    font-size: 45px;
   }
 }
 
