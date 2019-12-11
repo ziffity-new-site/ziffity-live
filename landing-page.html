@@ -1,262 +1,274 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Platform Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>     
-  <link rel="stylesheet" href="https://use.typekit.net/nqa6eiu.css">    
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/effects.css">
-  <link rel="stylesheet" href="css/fonts.css" >
-  <link rel="stylesheet" href="css/fullpage.min.css">
-    <!--<link rel="stylesheet" href="css/onepage-scroll.css">-->
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.4/jquery.fullPage.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-  <script src="js/fullpage.min.js"></script>
-    <!--<script src="js/jquery.onepage-scroll.min.js"></script>-->
-  <script type="text/javascript" src="js/dat.gui.min.js"></script>  
-  <style>
-    @import url("https://use.typekit.net/zpv6dck.css");    
-  </style>
+<style>
+    .txt-primary {
+        color: #294b82;
+    }
+    .txt-secondary {
+        color: #e6ad33;
+    }
+.over-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+    .bg-primary {
+        background: #294b82;
+    }
+    .bg-secondary {
+        background: #e6ad33;
+    }
+    .txt-alt {
+        color: #777;
+    }    
+    .page-title {
+        max-width: 550px;
+        margin: 0 auto;
+        text-transform: uppercase;    
+    }
+    .page-title h2 {
+        letter-spacing: 2px;
+    }
+    .d-flex {
+        display: flex;    
+    }
+    .align-item-center {
+        align-items: center;
+    }
+    .justify-content-center {
+        justify-content: center;
+    }
+    .sec-space {
+        margin-bottom: 8em;
+    }
+ .video-sec  {
+     cursor: pointer;
+   }
+    .mb-1 {
+        margin-bottom: 1.5em;
+    }
+    /**** more tools section ****/
+    .more-tools {
+        text-align: center;
+    }
+    .more-tools a.register-now {
+        margin-top: 1em;
+        margin-bottom: 3em;
+        padding: 1em 2.6em;
+    }
+    .save-time-sec {
+        padding: 3.2em 0;
+        max-width: 700px;
+        margin: 0 auto;
+    }        
+    .save-time-sec p {
+        font-size: 1.72em;
+        color: #fff;            
+        padding-left: 6.2em;
+    }
+    .more-tools span {
+        font-size: 14px;
+    }
+   
+    .shipping-item .product-info {
+        padding-right: 6.2em;
+    }
+    .shipping-item.sec-inverse .product-info {
+        padding-left: 6.2em;
+        padding-right: 0;
+        order: 2;
+    }        
+    .shipping-item.sec-inverse .product-item {
+        order: 1;
+    }
+    .product-item .item {
+        display: inline-block;
+        padding: 2em 1.5em;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+    .sub-title {
+        font-size: 1.72em;              
+    }
+    .shipping-content {
+        font-size: 1.15em;
+        margin-bottom: 3.2em;
+    }
+    .product-detail {
+         font-size: 1.3em;
+         color: #141d2f;             
+    }
+    .product-detail span:first-child {
+        margin-right: 1.2em;
+    }
+    .product-detail img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .inner-item-one,.inner-item-two,.inner-item-three {
+        width: 52px;
+        height: 52px;
+        display: inline-block;    
+        text-align: center;
+        border-radius: 50%;
+        position: relative;
+    }
+    .inner-item-one {    
+        background: #294b82;   
+    }
+    .inner-item-two {    
+        background: #e6ad33;   
+    }
+    .inner-item-three {
+        background: #141d2f;
+    }
+    @media only screen and (min-width:769px) {
+        .shipping-item {
+            display: flex;
+        }
+        .shipping-item >div {
+            width: 50%;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .sec-space {
+            margin-bottom: 4em;
+        }
+        .product-item {
+            margin-top: 2em;
+        }
+        .shipping-item.sec-inverse .product-info {
+             padding-left: 0;
+            }
+        .shipping-item .product-info {
+                padding-right: 0; 
+        }
+        .save-time-sec p {             
+            padding-left: 0.5em;
+        }
+    }       
+</style>
 
-
-</head>     
-<body>
-<!-- partial:index.partial.html -->
-<header class="site-header">
-    <div class="container head-flex">
-        <div class="logo-wrap">
-            <a href="#" class="logo">
-                <img class="white" src="images/logo-ziffity-white.png"/>
-                <img class="black" src="images/logo-ziffity-black.png"/>
-                
-            </a>
-        </div>
-        <nav class="navigation">
-            <ul>               
-                <li>
-                    <a href="#" class="nav-link data-transform"><span data-hover="Digital">Digital</span></a>
-                </li>                              
-                <li>
-                    <a href="#" class="nav-link data-transform"><span data-hover="Product Engineering">Product Engineering</span></a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link data-transform"><span data-hover="Cloud and DevOps">Cloud and DevOps</span></a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link data-transform"><span data-hover="Automation">Automation</span></a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link data-transform"><span data-hover="Contact Us">Contact Us</span></a>
-                </li>
-            </ul>
-        </nav>
-         <div class="toggle">
-            <span class="fg">
-              <em></em>
-              <em></em>
-              <em></em>
-            </span>
-        </div>
-    </div>
-</header>  
-
-<div class="main">   
-    <section class="holder platform-page">
-        <p class="text-uppercase txt-alt mb-0">platforms</p>
-        <h3 class="txt-light text-uppercase">Build your digital presence with what high-performing sites are made of.</h3>
-        <p class="txt-alt mb-20">Ziffity has experience in various platforms that have its clients establish their digital presence. We provide implementation, integration and managed services for platforms dedicated to content management, eCommerce and marketing automation.</p>
-        <p class="txt-alt mb-20">We can pick the right platforms that align to your business-specific requirements. Our platform expertise includes Adobe Experience Manager, Adobe Commerce Cloud, Magento, Akeneo, Drupal, Hubspot, Marketo, Dotdigital,and more</p>
-        <p class="txt-alt mb-20">Our experts can customize platforms and also provide long-term support services to accommodate your evolving needs.</p>
-        <div class="platforms-sec">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#" class="platform-name">
-                        <img src="images/logo-magento.png" alt="" />
-                        <div class="go-to-platform">
-                            <h6>MAGENTO</h6>
-                            <span class="icon-arrow-right"></span>
+      
+     
+       
+       
+        <div class="main">
+                <section class="more-tools sec-space">
+                    <div class="container-md ">
+                        <div class="page-title">
+                        <h2 class="txt-primary">The same franklin empire. Now more tools for you!</h2>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#" class="platform-name">
-                        <img src="images/logo-akeneo.png" alt="" />
-                        <div class="go-to-platform">
-                            <h6>AKENEO</h6>
-                            <span class="icon-arrow-right"></span>
+                        <div class="txt-alt "><p>Our website has been designed with you in mind.</p></div>
+                        <a href="#" class="button action btn-yellow  register-now">Register Now</a>
+                        <div class="video-sec">
+                        <video controls poster="{{media url="wysiwyg/static-page/video-image.jpg"}}">
+                                <source src="https://franklinempire.com/launch/en/media/FE-Motion-Final_EN.mp4" >                                    
+                                Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    </div>
+                </section>
+                <section class="sec-space bg-primary over-width">
+                     <div class="save-time-sec d-flex align-item-center justify-content-center ">
+                         <div>
+                             <img src="{{media url="wysiwyg/static-page/illustration-men.png"}}"  alt="" />
+                         </div>
+                         <div>
+                             <p>Take advantage of easy to use features and time saving tools to help make your work easier.</p>
+                         </div>
+                     </div>
+                </section>
+                <section class="shipping-item sec-space ">
+                     <div class="product-info">
+                        <p class="sub-title txt-primary">Rich product information</p>
+                        <p class="shipping-content">Search and view products to place your order, request a quote, or to help plan your projects. Find everything in one place.</p>
+                        <div class="product-detail d-flex align-item-center mb-1">
+                            <span class="inner-item-one"><img src="{{media url="wysiwyg/static-page/icon-doc.png"}}"  alt=""/></span><span>Images, spec sheets, documentation</span>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#" class="platform-name">
-                        <img src="images/logo-wordpress.png" alt="" />
-                        <div class="go-to-platform">
-                                <h6>WORDPRESSS</h6>
-                                <span class="icon-arrow-right"></span>
+                        <div class="product-detail d-flex align-item-center">
+                                <span class="inner-item-two"><img src="{{media url="wysiwyg/static-page/icon-product.png"}}" alt=""/></span><span>Product equivalents and related items</span>
+                        </div>
+                     </div>
+                     <div class="product-item">
+                         <div class="item">
+                            <img src="{{media url="wysiwyg/static-page/image-1.jpg"}}" alt=""/>
+                         </div>
+                     </div>
+                </section>
+                <section class="shipping-item sec-space sec-inverse">
+                        <div class="product-info">
+                            <p class="sub-title txt-primary">View your price and branch inventory</p>
+                            <p class="shipping-content">Up to date pricing, visibility on Franklin Empire stock and delivery delay.</p>
+                            <div class="product-detail d-flex align-item-center mb-1">
+                                <span class="inner-item-one"><img src="{{media url="wysiwyg/static-page/icon-dollor.png"}}" alt=""/></span><span>Access your trade price</span>
                             </div>
-                        </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#" class="platform-name">
-                        <img src="images/logo-drupal.png" alt="" />
-                        <div class="go-to-platform">
-                                <h6>DRUPAL</h6>
-                                <span class="icon-arrow-right"></span>
-                            </div>
-                        </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                        <a href="#" class="platform-name">
-                            <img src="images/logo-adobe-experience-manager.png" alt="" />
-                            <div class="go-to-platform">
-                                    <h6>ADOBE EXPERIENCE MANAGER</h6>
-                                    <span class="icon-arrow-right"></span>
+                            <div class="product-detail d-flex align-item-center">
+                                    <span class="inner-item-two"><img src="{{media url="wysiwyg/static-page/icon-time.png"}}" alt=""/></span><span>Real time inventory across branches</span>
                                 </div>
-                            </a>
-                    </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#" class="platform-name">
-                        <img src="images/logo-commerce-cloud.png" alt="" />
-                        <div class="go-to-platform">
-                                <h6>ADOBE COMMERCE CLOUD</h6>
-                                <span class="icon-arrow-right"></span>
+                        </div>
+                            <div class="product-item">
+                                <div class="item">
+                                    <img src="{{media url="wysiwyg/static-page/image-2.jpg"}}" alt=""/>
+                                </div>
                             </div>
-                        </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#" class="platform-name">
-                        <img src="images/logo-hubspot.png" alt="" />
-                        <div class="go-to-platform">
-                            <h6>HUBSPOT</h6>
-                            <span class="icon-arrow-right"></span>
+                </section>
+                <section class="shipping-item sec-space ">
+                        <div class="product-info">
+                           <p class="sub-title txt-primary">Quick order pad</p>
+                           <p class="shipping-content">Have a long list and know exactly what you want, or already have it on an excel file? Place your order in seconds using the Quick order pad.</p>
+                           <div class="product-detail d-flex align-item-center mb-1">
+                               <span class="inner-item-one"><img src="{{media url="wysiwyg/static-page/icon-quick-order.png"}}" alt=""/></span><span>Search and order quickly</span>
+                           </div>
+                           <div class="product-detail d-flex align-item-center mb-1">
+                                   <span class="inner-item-two"><img src="{{media url="wysiwyg/static-page/icon-upload.png"}}" alt=""/></span><span>Upload csv file</span>
+                               </div>
+                               <div class="product-detail d-flex align-item-center">
+                                <span class="inner-item-three"><img src="{{media url="wysiwyg/static-page/icon-copy-paste.png"}}" alt=""/></span><span>Copy &amp; Paste pad</span>
+                            </div>
                         </div>
-                    </a>
-                </div> 
-                <div class="col-md-3 col-sm-6">
-                    <a href="#" class="platform-name">
-                        <img src="images/logo-marketo.png" alt="" />
-                        <div class="go-to-platform">
-                            <h6>MARKETO</h6>
-                            <span class="icon-arrow-right"></span>
+                        <div class="product-item">
+                              <div class="item">
+                                <img src="{{media url="wysiwyg/static-page/image-3.jpg"}}" alt=""/>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#" class="platform-name">
-                        <img src="images/logo-dotdigital.png" alt="" />
-                        <div class="go-to-platform">
-                            <h6>DOTDIGITAL</h6>
-                            <span class="icon-arrow-right"></span>
+                   </section>
+                   <section class="shipping-item sec-space sec-inverse">
+                        <div class="product-info">
+                           <p class="sub-title txt-primary">Account dashboard</p>
+                           <p class="shipping-content">Quick access to information you may be looking for. Set roles and permissions to allow others at your company to take advantages to the tools available.</p>
+                           <div class="product-detail d-flex align-item-center mb-1">
+                               <span class="inner-item-one"><img src="{{media url="wysiwyg/static-page/icon-invoice.png"}}" alt=""/></span><span>Order history, invoices, quotes</span>
+                           </div>
+                           <div class="product-detail d-flex align-item-center">
+                                   <span class="inner-item-two"><img src="{{media url="wysiwyg/static-page/icon-management.png"}}" alt=""/></span><span>Company user management</span>
+                               </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#" class="platform-name">
-                        <img src="images/logo-adobe-campaign.png" alt="" />
-                        <div class="go-to-platform">
-                            <h6>ADOBE CAMPAIGN</h6>
-                            <span class="icon-arrow-right"></span>
+                        <div class="product-item">
+                            <div class="item">
+                               <img src="{{media url="wysiwyg/static-page/image-4.jpg"}}" alt=""/>
+                            </div>
                         </div>
-                    </a>
-                </div>
-            </div>
+                   </section>
+                   <section class="shipping-item sec-space">
+                        <div class="product-info">
+                           <p class="sub-title txt-primary">Delivery or pick up</p>
+                           <p class="shipping-content">At checkout you choose when and how you want to get your order.</p>
+                           <div class="product-detail d-flex align-item-center mb-1">
+                               <span class="inner-item-one"><img src="{{media url="wysiwyg/static-page/icon-delivery.png"}}" alt=""/></span><span>Schedule delivery</span>
+                           </div>
+                           <div class="product-detail d-flex align-item-center">
+                                   <span class="inner-item-two"><img src="{{media url="wysiwyg/static-page/icon-pickup.png"}}" alt=""/></span><span>Pick up at any branch</span>
+                               </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="item">
+                               <img src="{{media url="wysiwyg/static-page/image-5.jpg"}}" alt=""/>
+                            </div>
+                        </div>
+                   </section>
+    
         </div>
-        <div class="contact-part">
-            <div class="contact-info">
-            <p class="text-uppercase txt-alt">contact us</p>
-            <h6 class="text-uppercase txt-light">It might be anything you want to tell us about. Drop us a line and let's take it from there.</h6>
-            </div>
-            <div class="talk-to">
-                    <a href="#" class="btn btn-white btn-flash" tabindex="-1">TALK TO US <span class="icon-arrow-right"></span></a>
-            </div>
-        </div>
-    </section>
-    <section class="section footer-sec bg-primary">           
-            <div class="footer-part">
-                <div class="holder-md">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <ul>
-                                <li><a href="#" class="line-effect">About</a></li>
-                                <li><a href="#" class="line-effect">Blog</a></li>
-                                <li><a href="#" class="line-effect">Careers</a></li>
-                                <li><a href="#" class="line-effect">Contact</a></li>
-                                <li><a href="#" class="line-effect">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <ul>
-                                <li><a href="#" class="line-effect">Digital</a></li>
-                                <li><a href="#" class="line-effect">Product Engineering</a></li>
-                                <li><a href="#" class="line-effect">Cloud &amp; DevOps</a></li>
-                                <li><a href="#" class="line-effect">Automation</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <ul>
-                               <li><a href="#" class="line-effect">Magento Services</a></li>
-                               <li><a href="#" class="line-effect">Akeneo PIM</a></li>
-                               <li><a href="#" class="line-effect">AEM</a></li>
-                               <li><a href="#" class="line-effect">AI Chatbots</a></li>
-                               <li><a href="#" class="line-effect">QA Testing</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <ul>
-                               <li><a href="#" class="line-effect">+1-415+692-5513</a></li>
-                               <li><a href="#" class="line-effect">+91-44-42695978</a></li>
-                               <li><a href="#" class="line-effect">contactus@ziffity.com</a></li>
-                               <li>
-                                   <span>FOLLOW US ON</span>
-                                   <ul class="social-links">
-                                       <li><a href="#" class="twitter">Twitter</a></li>
-                                       <li><a href="#" class="linkedin">LinkedIn</a></li>
-                                   </ul>
-                               </li>
-                               <li><a href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-            <div class="copyright-sec txt-alt">
-                <span>Copyright &copy; 2019 Ziffity Solutions LLC.All Rights Reserved</span>
-            </div>       
-       </section>  
-    <div class="progress-page ">
-        <div class="scrolltotop is-active is-visible icon-arrow-up" data-tooltip="Back to top" data-placement="top">
-        </div>
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 29.279;"/>
-        </svg>
-    </div> 
-
-</div>
-
-
-<div id="page-lines" class="white">
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-</div>
-
-
-<!-- partial -->
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/THREE.OrbitControls.js'></script> -->
-
-<script src="js/script.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/custom.js"></script>
-</body>
-</html>
+    
