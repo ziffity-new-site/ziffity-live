@@ -1169,7 +1169,7 @@ nav.navigation ul li {
   display: none;
 }
 
-.main section.banner-section ~ #page-lines #page-scroll-line {
+.main section.banner-section.active ~ #page-lines #page-scroll-line {
   display: block;
 }
 

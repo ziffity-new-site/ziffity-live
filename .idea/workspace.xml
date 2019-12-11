@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f5ec61-b804-4562-ac93-e8c129b236e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-3.html" afterPath="$PROJECT_DIR$/index-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="246">
-              <caret line="1171" column="6" lean-forward="true" selection-start-line="1171" selection-start-column="6" selection-end-line="1171" selection-end-column="13" />
+              <caret line="1171" column="35" lean-forward="false" selection-start-line="1171" selection-start-column="35" selection-end-line="1171" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -315,12 +312,12 @@
       <workItem from="1575871952163" duration="16000" />
       <workItem from="1575888101050" duration="4610000" />
       <workItem from="1575957526309" duration="14059000" />
-      <workItem from="1576047015507" duration="704000" />
+      <workItem from="1576047015507" duration="1564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135854000" />
+    <option name="totallyTimeSpent" value="136714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="-11" width="1889" height="1092" extended-state="6" />
@@ -750,7 +747,7 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
-          <caret line="1171" column="6" lean-forward="true" selection-start-line="1171" selection-start-column="6" selection-end-line="1171" selection-end-column="13" />
+          <caret line="1171" column="35" lean-forward="false" selection-start-line="1171" selection-start-column="35" selection-end-line="1171" selection-end-column="35" />
           <folding />
         </state>
       </provider>
