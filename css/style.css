@@ -485,6 +485,16 @@ nav.navigation ul li {
   font-family: 'din-condensed', sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.our-works-sec .pjt-name h3:after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  display: block;
+  background: #ffffff;
 }
 
 
@@ -1155,10 +1165,13 @@ nav.navigation ul li {
   border-right: 1px solid #ef0e34;
 }
 
-.main section:not(.banner-section) ~ #page-lines #page-scroll-line {
+.main section ~ #page-lines #page-scroll-line {
   display: none;
 }
 
+.main section.banner-section ~ #page-lines #page-scroll-line {
+  display: block;
+}
 
 @keyframes lineanimation {
   0% {
@@ -1192,7 +1205,18 @@ nav.navigation ul li {
   font-family:'acumin-pro',sans-serif;
   font-size: 16px;
   color: #ffffff;
+  line-height: 55px;
+  position: relative;
 }
+
+.what-do-sec h2:after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+}
+
 .what-we-do-content{
     color: #fff;
     margin-top: 0;
