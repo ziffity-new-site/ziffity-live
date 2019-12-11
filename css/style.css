@@ -485,6 +485,16 @@ nav.navigation ul li {
   font-family: 'din-condensed', sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.our-works-sec .pjt-name h3:after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  display: block;
+  background: #ffffff;
 }
 
 
@@ -1124,7 +1134,7 @@ nav.navigation ul li {
   border-right: 1px solid rgba(0,0,0,.09);
 }
 #page-lines.white .page-lines-line {
-  border-right: 1px solid rgba(255,255,255,.08);
+  border-right: 1px solid rgba(255,255,255,.05);
 }
 .page-lines-line:nth-child(1) {
   left: 0%;
@@ -1145,7 +1155,7 @@ nav.navigation ul li {
 #page-scroll-line {
   position: absolute;
   bottom: 55px;
-  left: 83.3333%;
+  left: 100%;
   height: 60px;
   transform: scaleY(0);
   transform-origin: top center;
@@ -1153,6 +1163,14 @@ nav.navigation ul li {
   animation: lineanimation 2s infinite;
   animation-delay: 2s;  
   border-right: 1px solid #ef0e34;
+}
+
+.main section ~ #page-lines #page-scroll-line {
+  display: none;
+}
+
+.main section.banner-section.active ~ #page-lines #page-scroll-line {
+  display: block;
 }
 
 @keyframes lineanimation {
@@ -1187,7 +1205,18 @@ nav.navigation ul li {
   font-family:'acumin-pro',sans-serif;
   font-size: 16px;
   color: #ffffff;
+  line-height: 55px;
+  position: relative;
 }
+
+.what-do-sec h2:after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+}
+
 .what-we-do-content{
     color: #fff;
     margin-top: 0;
@@ -1592,7 +1621,7 @@ nav.navigation ul li {
 /****** footer section ********/
 .footer-sec .what-new {
   position: relative;
-   max-width: 440px;
+   max-width: 390px;
    margin: 0 auto;
    margin-bottom: 120px;
 }
@@ -1644,7 +1673,7 @@ nav.navigation ul li {
 
 .footer-part {
   background-color: #191919;
-  padding: 50px 0 30px 0;
+  padding: 40px 0 30px 0;
 }
 .footer-part .row {
   display: flex;
@@ -1655,7 +1684,7 @@ nav.navigation ul li {
   margin-bottom: 0;
 }
 .footer-part ul li {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .footer-part ul li a {
   font-size: 14px;
@@ -1673,8 +1702,8 @@ nav.navigation ul li {
 
 
 .copyright-sec {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 14px;    
   text-align: center;
 }
@@ -1686,6 +1715,7 @@ nav.navigation ul li {
 
 .footer-part .social-links li {
   display: inline-block;
+  padding-bottom: 0;
 }
 
 .footer-part .social-links li + li {
@@ -1755,15 +1785,7 @@ nav.navigation ul li {
   .footer-sec .what-new {
     margin-bottom: 80px;
   }
-  .footer-part {
-    padding: 50px 0;    
-  }
-  .copyright-sec {
-    padding: 30px 0;
-  }
-  .footer-part ul li {
-    padding-bottom: 15px;
-}
+
 }
 @media only screen and (max-width: 1200px) { 
   .toggle {
