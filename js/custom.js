@@ -71,7 +71,7 @@ $(document).ready(function(){
 
     var delay = $('.what-we-do-content span').last().attr('data-wow-delay');
     var delayTime = parseFloat(delay);
-    var time = delayTime + 2.0;
+    var time = delayTime + 5.0;
     if($('.what-we-do-content span').last().attr('data-wow-delay') === delay ) {
         setTimeout(function(){
             $('.what-we-do-content .content-inner span').addClass('active');
