@@ -1624,6 +1624,7 @@ nav.navigation ul li {
  .services-digital .service-content {
   max-width: 625px;
   display: block;
+  padding-right: 30px;
 } 
 .services-digital .service-content p {
   color: #777;
@@ -1866,6 +1867,10 @@ nav.navigation ul li {
   .footer-sec .what-new {
     margin-bottom: 80px;
   }
+  .services-item-slider {
+    width: 400px;
+    right: -50px;
+  }
 
 }
 @media only screen and (max-width: 1200px) { 
@@ -1907,6 +1912,19 @@ nav.navigation ul li {
   .sec-space {
     margin-bottom: 60px;
   }
+  .services-digital .service-content {
+    max-width: 600px;
+  }
+  .services-digital .content-slider-wrap {
+    background: transparent;
+  }
+  .services-digital {
+    background: #000;
+  }
+  .services-item-slider {
+    position: relative;
+  }
+
 }
 @media only screen and (max-width: 992px) {
   .sec-space {
