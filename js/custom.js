@@ -269,7 +269,7 @@ $(document).ready(function(){
     $('.home .main').fullpage({
         scrollBar: true,
         responsiveWidth:767,
-        scrollingSpeed: 500,
+        scrollingSpeed: 1000,
         navigation: false
     });
 
