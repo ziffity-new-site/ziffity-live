@@ -266,6 +266,13 @@ $(document).ready(function(){
     );
     wow.init();
 
+    $('.home .main').fullpage({
+        scrollBar: true,
+        responsiveWidth:767,
+        scrollingSpeed: 500,
+        navigation: false
+    });
+
    //global variables
    var responsiveflag = false;
 
@@ -277,16 +284,11 @@ $(document).ready(function(){
        if (($(window).width()) <= 767 && responsiveflag == false)
        {           
            responsiveflag = true;
-           fullpage_api.destroy('all');
+           //fullpage_api.destroy('all');
        }
        else if (($(window).width()) >= 768)
        {
-        $('.home .main').fullpage({
-            scrollBar: true,
-            responsiveWidth:767,
-            scrollingSpeed: 500,
-            navigation: false
-          });
+
        }
    }
    /*--------------------------------------------------
