@@ -125,8 +125,27 @@ $(document).ready(function(){
         fade: true,
         draggable: false,
         cssEase: 'linear'
+    });    
+    $('.services-item-slider').slick({
+        autoplay:false,
+        infinite: true,
+        arrows:false,
+        speed: 500,
+        autoplaySpeed: 5000,
+        fade: true,
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+        asNavFor: '.services-digital .content-slider'
     });
-
+    $('.services-digital .content-slider').slick({
+        autoplay:false,
+        infinite: true,
+        arrows:true,
+        speed: 500,
+        autoplaySpeed: 5000,
+        fade: true,
+        cssEase: 'linear',
+        asNavFor: '.services-item-slider'
+    });
     $('.image-slider').slick({
         autoplay:false,
         infinite: true,
