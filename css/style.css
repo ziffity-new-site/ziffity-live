@@ -384,14 +384,15 @@ nav.navigation ul li {
 .line-2 {
   right: 1px;
   bottom: 1px;
+  left: auto;
   top: auto;
 }
 
 .line-1:before, .line-1:after,
 .line-2:before, .line-2:after{
   content: '';
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   height: 100%;
   width: 100%;
   transform-origin: center;
@@ -1335,6 +1336,7 @@ nav.navigation ul li {
 .service-content a {
   color: #ffffff;
   text-transform: uppercase;
+  padding-right: 20px;
 }
 
 .content-slider-wrap .slick-arrow{
@@ -1364,9 +1366,17 @@ nav.navigation ul li {
   transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
+.image-slider .image-sec {
+  overflow: hidden;
+}
+
 .image-slider img {
   transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
   transform: scale(1.2);
+}
+
+.image-slider .image-sec:hover img {
+  transform: rotate(3deg) scale(1.1);
 }
 
 .image-slider .slick-active img {
@@ -1493,9 +1503,9 @@ nav.navigation ul li {
   font-family: 'ziffity';
   font-size: 18px;
   position: absolute;
-  right: -20px;
+  right: 0px;
   top: 0px;
-  transition: all 0.5s linear 0s;
+  transition: transform 0.3s;
 }
 
 .right-arrow:hover:before {
