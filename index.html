@@ -2,31 +2,42 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Home page</title>
+  <title>Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>     
   <link rel="stylesheet" href="https://use.typekit.net/nqa6eiu.css">    
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
-  <link rel="stylesheet" href="css/style.css">  
-  <link rel="stylesheet" href="css/font.css" >  
-  <link rel="stylesheet" href="css/fullpage.min.css">   
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.4/jquery.fullPage.css" /> 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>  
-  <script src="js/fullpage.min.js"></script>    
-  <script src="js/custom.js"></script>   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/fonts.css" >
+  <link rel="stylesheet" href="css/fullpage.min.css">
+    <!--<link rel="stylesheet" href="css/onepage-scroll.css">-->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.4/jquery.fullPage.css" />-->
+
+    <!--<script src="js/jquery.onepage-scroll.min.js"></script>-->
   <style>
     @import url("https://use.typekit.net/zpv6dck.css");
+
+    canvas {
+        width: 100%;
+        height: 100%;
+    }
   </style>
+    <link rel="icon" href="https://www.ziffity.com/wp-content/uploads/2018/07/ziffity_logo_favicon.jpg" sizes="32x32" />
+    <link rel="icon" href="https://www.ziffity.com/wp-content/uploads/2018/07/ziffity_logo_favicon.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="https://www.ziffity.com/wp-content/uploads/2018/07/ziffity_logo_favicon.jpg" />
+    <meta name="msapplication-TileImage" content="https://www.ziffity.com/wp-content/uploads/2018/07/ziffity_logo_favicon.jpg" />
+
 </head>     
-<body>  
+<body class="home">
 <!-- partial:index.partial.html -->
 
 <header class="site-header">
     <div class="container head-flex">
         <div class="logo-wrap">
-            <a href="#" class="logo">
+            <a href="/index-3.html" class="logo">
                 <img class="white" src="images/logo-ziffity-white.png"/>
                 <img class="black" src="images/logo-ziffity-black.png"/>
                 
@@ -35,17 +46,20 @@
         <nav class="navigation">
             <ul>               
                 <li>
-                    <a href="#">Digital</a>
+                    <a href="#" class="nav-link data-transform"><span data-hover="Digital">Digital</span></a>
                 </li>                              
                 <li>
-                    <a href="#">Product Engineering</a>
+                    <a href="https://www.ziffity.com/product-engineering/" class="nav-link data-transform"><span data-hover="Product Engineering">Product Engineering</span></a>
                 </li>
                 <li>
-                    <a href="#">Cloud and DevOps</a>
+                    <a href="https://www.ziffity.com/technology/devops-services/" class="nav-link data-transform"><span data-hover="Cloud and DevOps">Cloud and DevOps</span></a>
                 </li>
                 <li>
-                    <a href="#">Automation</a>
-                </li>                                    
+                    <a href="#" class="nav-link data-transform"><span data-hover="Automation">Automation</span></a>
+                </li>
+                <li>
+                    <a href="https://www.ziffity.com/contact-us/" class="nav-link data-transform"><span data-hover="Contact Us">Contact Us</span></a>
+                </li>
             </ul>
         </nav>
          <div class="toggle">
@@ -60,130 +74,465 @@
 
 <div class="main">       
         <section  class="section banner-section">
-                <div id="three-container"></div>
+            <canvas id="canvas"></canvas>
                 <div class="main-text">
-                    <h1><div class="banner-txt txt-one" data-text="IMAGINE.">IMAGINE.</div>
-                        <div class="banner-txt txt-two" data-text="CRAFT.">CRAFT.</div>
-                        <div class="banner-txt txt-three" data-text="SCORE.">SCORE.</div></h1>
-                    <span class="reveal"></span>
-                    <p>Agency for Digital and Beyond</p>
+                    <div class="holder-lg container">
+                        <h1><div class="banner-txt data-text txt-one" data-text="IMAGINE.">IMAGINE.</div>
+                            <div class="banner-txt data-text txt-two" data-text="CRAFT.">CRAFT.</div>
+                            <div class="banner-txt data-text txt-three" data-text="SCORE.">SCORE.</div></h1>
+                        <span class="reveal"></span>
+                        <p>Agency for Digital and Beyond</p>
+                    </div>
                 </div>
 
         </section>
-    <section class="section our-service-sec sec-space">
-        <div class="container">
-            <div class="holder">
-                <div class="row d-flex align-items-center">
-                    <div class="col-md-4 our-service-content">
-                            <h3>Our Service</h3>
-                            <p class="txt-alt sub-title">As a full-service agency, here's our wide range of services with which we could take your business to the next level.</p>
-                    </div>
-                    <div class="col-md-8 p-0">
-                        <div class="col-sm-6 mb-40 our-service-blog px-20 active ">
-                                <a href="#" class="pos-rel">
-                                        <img src="images/digital.jpg" alt=""/>
-                                        <div class="pos-abs abs-bl-30">
-                                            <h4 class="txt-light">Digital</h4>
-                                            <p class="m-0 txt-light">Springboard your business to success with digital technologies.</p>
-                                        </div>
-                                </a>                                
+        <section class="section what-do-sec bg-primary">
+            <div class="holder-lg container">
+                <h2 class="txt-alt text-uppercase wow fadeInUp" data-wow-delay="0.3">what we do</h2>
+                <div class="what-we-do-content">
+                    <span class="content-inner content-inner-1">We blend design thinking, </span>
+                    <span class="content-inner content-inner-2">cutting edge technologies and marketing excellence</span>
+                    <span class="content-inner content-inner-3">to provide best-in-class engineering</span>
+                    <span class="content-inner content-inner-4">and digital solutions for your business</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section service-sec bg-primary">
+            <div class="dynamic-background">
+                <div class="color-sec" data-color1="#ff5367" data-color2="#be0031"></div>
+                <div class="color-sec" data-color1="#6d41a4" data-color2="#52267d"></div>
+                <div class="color-sec" data-color1="#fcb814" data-color2="#f26322"></div>
+                <div class="color-sec" data-color1="#0176fe" data-color2="#2b77eb"></div>
+                <div class="color-sec" data-color1="#353c56" data-color2="#24293b"></div>
+            </div>
+
+            <div class="service-outer">
+                <div class="service-inner">
+                    <div class="image-slider-wrap slider-wrapper">
+                        <div class="image-slider">
+                            <div class="image-sec">
+                                <img src="images/service-digital.jpg" alt="">
+                                <div class="line-1"></div>
+                                <div class="line-2"></div>
                             </div>
-                        <div class="col-sm-6 mb-40 our-service-blog px-20">
-                            <a href="#" class="pos-rel">
-                                    <img src="images/digital.jpg" alt=""/>
-                                    <div class="pos-abs abs-bl-30 ">
-                                        <h4 class="txt-light">Automation</h4>
-                                        <p class="m-0 txt-light">Enhance productivity with smart automation tools.</p>
-                                    </div>
-                            </a>                                
+                            <div class="image-sec">
+                                <img src="images/service-automation.jpg" alt="">
+                                <div class="line-1"></div>
+                                <div class="line-2"></div>
+                            </div>
+                            <div class="image-sec">
+                                <img src="images/service-product-engineering.jpg" alt="">
+                                <div class="line-1"></div>
+                                <div class="line-2"></div>
+                            </div>
+                            <div class="image-sec">
+                                <img src="images/service-cloud-devops.jpg" alt="">
+                                <div class="line-1"></div>
+                                <div class="line-2"></div>
+                            </div>
+                            <div class="image-sec">
+                                <img src="images/service-platform.jpg" alt="">
+                                <div class="line-1"></div>
+                                <div class="line-2"></div>
+                            </div>
                         </div>
-                        <div class="col-sm-6  our-service-blog px-20">
-                            <a href="#" class="pos-rel">
-                                <img src="images/digital.jpg" alt=""/>
-                                <div class="pos-abs abs-bl-30  ">
-                                    <h4 class="txt-light">Product Engineering</h4>
-                                    <p class="m-0 txt-light">Build future-ready digital products with our Product Engineering expertise.</p>
+                    </div>
+                    <div class="content-slider-wrap slider-wrapper">
+                        <div class="content-slider">
+                            <div class="content-sec">
+                                <div class="service-content">
+                                    <div class="service-title" data-animation="fadeInDown" data-delay="0.5s">Our Services</div>
+                                    <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Digital</div>
+                                    <p data-animation="fadeInDown" data-delay="1.5s">Digital transformation is the process of applying digital technologies to create or modify business processes and achieve a seamless cross-channel customer experience.</p>
+                                    <a href="#" alt="" class="right-arrow data-transform" data-animation="fadeInDown" data-delay="2s"><span data-hover="Learn More">Learn More</span></a>
+
                                 </div>
-                            </a>                                
+                            </div>
+                            <div class="content-sec">
+                                <div class="service-content">
+                                    <div class="service-title" data-animation="fadeInDown" data-delay="0.5s">Our Services</div>
+                                    <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Automation</div>
+                                    <p data-animation="fadeInDown" data-delay="1.5s">Automation is one of the key technologies that’s helping businesses to increase efficiency, reduce operational costs, and improve productivity.
+                                    </p>
+                                    <a href="#" alt="" class="right-arrow data-transform" data-animation="fadeInDown" data-delay="2s"><span data-hover="Learn More">Learn More</span></a>
+
+                                </div>
+                            </div>
+                            <div class="content-sec">
+                                <div class="service-content">
+                                    <div class="service-title" data-animation="fadeInDown" data-delay="0.5s">Our Services</div>
+                                    <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Product Engineering</div>
+                                    <p data-animation="fadeInDown" data-delay="1.5s">Ziffity’s product engineering solutions aim at building high-octane SaaS products and enterprise-grade applications.</p>
+                                    <a href="#" alt="" class="right-arrow data-transform" data-animation="fadeInDown" data-delay="2s"><span data-hover="Learn More">Learn More</span></a>
+
+                                </div>
+                            </div>
+                            <div class="content-sec">
+                                <div class="service-content">
+                                    <div class="service-title" data-animation="fadeInDown" data-delay="0.5s">Our Services</div>
+                                    <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Cloud and DevOps</div>
+                                    <p data-animation="fadeInDown" data-delay="1.5s">Blur the lines between the development and operations team in your software development ecosystem and accelerate delivery with a DevOps approach.
+                                    </p>
+                                    <a href="#" alt="" class="right-arrow data-transform" data-animation="fadeInDown" data-delay="2s"><span data-hover="Learn More">Learn More</span></a>
+
+                                </div>
+                            </div>
+                            <div class="content-sec">
+                                <div class="service-content">
+                                    <div class="service-title" data-animation="fadeInDown" data-delay="0.5s">Our Services</div>
+                                    <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Platforms</div>
+                                    <p data-animation="fadeInDown" data-delay="1.5s">Delivering solution using a wide range of problems</p>
+                                    <a href="#" alt="" class="right-arrow data-transform" data-animation="fadeInDown" data-delay="2s"><span data-hover="Learn More">Learn More</span></a>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6  our-service-blog px-20">
-                            <a href="#" class="pos-rel">
-                                    <img src="images/digital.jpg" alt=""/>
-                                    <div class="pos-abs abs-bl-30">
-                                        <h4  class="txt-light">Cloud &amp; Devops</h4>
-                                        <p class="m-0 txt-light">Maximize ROI and accelerate development with our Cloud &amp; Devops services.</p>
-                                    </div>
-                            </a>                                
-                        </div>                                                        
                     </div>
                 </div>
             </div>
-        </div>
-        </section> 
-        <section class="section our-service-sec sec-space">
-                <div class="container">
-                    <div class="holder">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-4 our-service-content">
-                                    <h3>Our Service</h3>
-                                    <p class="txt-alt sub-title">As a full-service agency, here's our wide range of services with which we could take your business to the next level.</p>
-                            </div>
-                            <div class="col-md-8 p-0">
-                                <div class="col-sm-6 mb-40 our-service-blog px-20 active ">
-                                        <a href="#" class="pos-rel">
-                                                <img src="images/digital.jpg" alt=""/>
-                                                <div class="pos-abs abs-bl-30">
-                                                    <h4 class="txt-light">Digital</h4>
-                                                    <p class="m-0 txt-light">Springboard your business to success with digital technologies.</p>
-                                                </div>
-                                        </a>                                
-                                    </div>
-                                <div class="col-sm-6 mb-40 our-service-blog px-20">
-                                    <a href="#" class="pos-rel">
-                                            <img src="images/digital.jpg" alt=""/>
-                                            <div class="pos-abs abs-bl-30 ">
-                                                <h4 class="txt-light">Automation</h4>
-                                                <p class="m-0 txt-light">Enhance productivity with smart automation tools.</p>
-                                            </div>
-                                    </a>                                
+        </section>
+
+        <section class="section our-works-sec">
+            <div class="our-works-banner">
+                <div class="item">
+                    <img src="images/work-usesi.jpg"/>
+                    <div class="pjt-name txt-light">
+                        <div class="holder-md">
+                            <h2>Our Works</h2>
+                            <div class="pjt-inner">
+                                <div class="prj-desc">
+                                    <h3 class="txt-light">US Electrical</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                                 </div>
-                                <div class="col-sm-6  our-service-blog px-20">
-                                    <a href="#" class="pos-rel">
-                                        <img src="images/digital.jpg" alt=""/>
-                                        <div class="pos-abs abs-bl-30  ">
-                                            <h4 class="txt-light">Product Engineering</h4>
-                                            <p class="m-0 txt-light">Build future-ready digital products with our Product Engineering expertise.</p>
-                                        </div>
-                                    </a>                                
+                                <div class="prj-link">
+                                    <a href="#" class="btn btn-blk-bor btn-flash" tabindex="-1">CASE STUDIES <span class="icon-arrow-up-right"></span></a>
                                 </div>
-                                <div class="col-sm-6  our-service-blog px-20">
-                                    <a href="#" class="pos-rel">
-                                            <img src="images/digital.jpg" alt=""/>
-                                            <div class="pos-abs abs-bl-30">
-                                                <h4  class="txt-light">Cloud &amp; Devops</h4>
-                                                <p class="m-0 txt-light">Maximize ROI and accelerate development with our Cloud &amp; Devops services.</p>
-                                            </div>
-                                    </a>                                
-                                </div>                                                        
                             </div>
                         </div>
                     </div>
                 </div>
-                </section> 
+
+                  <div class="item">
+                      <img src="images/work-dynojet.jpg"/>
+                      <div class="pjt-name txt-light">
+                          <div class="holder-md">
+                              <h2>Our Works</h2>
+                              <div class="pjt-inner">
+                                  <div class="prj-desc">
+                                      <h3 class="txt-light">DYNOJET</h3>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                  </div>
+                                  <div class="prj-link">
+                                      <a href="#" class="btn btn-blk-bor btn-flash" tabindex="-1">CASE STUDIES <span class="icon-arrow-up-right"></span></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                <div class="item">
+                    <img src="images/work-aao.jpg"/>
+                    <div class="pjt-name txt-light">
+                        <div class="holder-md">
+                            <h2>Our Works</h2>
+                            <div class="pjt-inner">
+                                <div class="prj-desc">
+                                    <h3 class="txt-light">AMERICAN ACADEMY OF OPHTHALMOLOGY</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+                                <div class="prj-link">
+                                    <a href="#" class="btn btn-blk-bor btn-flash" tabindex="-1">CASE STUDIES <span class="icon-arrow-up-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/work-dwell.jpg"/>
+                    <div class="pjt-name txt-light">
+                        <div class="holder-md">
+                            <h2>Our Works</h2>
+                            <div class="pjt-inner">
+                                <div class="prj-desc">
+                                    <h3 class="txt-light">DWELL</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+                                <div class="prj-link">
+                                    <a href="#" class="btn btn-blk-bor btn-flash" tabindex="-1">CASE STUDIES <span class="icon-arrow-up-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section clientlogo-sec bg-primary">
+            <div class="container holder-lg">
+                <div class="text-center heading">
+                    <h4 class="text-uppercase heading-title" >Our Clients</h4>
+                </div>
+                <div class="logo-sec">
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-uselectrical.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-aao.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-armstrong-garden-centers.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-dwell.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-dynojet.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-expressmed.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-earthlite.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-foxchapelpublishing.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-franklinempire.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-frenchtoast.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-globalindustrial.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-guidance.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-kravetinc.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-kurtgeiger.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-mw-industries.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-norcalgroup.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-partysupplyusa.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-olam.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-scrubs-beyond.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-shopcsntv.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-sustainablesupply.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-sweda.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-tahari-arthur-s-levine.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2 cli-logo-inner">
+                        <img src="images/logo-vetsource.png" alt=""/>
+                        <div class="slide-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section blog-sec bg-primary">
+            <div class="container holder-lg">
+                <div class="text-center heading">
+                    <h4 class="text-uppercase heading-title">Our Perspectives</h4>
+                    <span class="sub-heading">Fresh feed from our latest blogs where we explore latest technologies, its possibilities and latest trends.</span>
+                </div>
+                <div class="container holder-lg">
+                    <div class="row blog-slider">
+                        <div class="col-md-4 blog-sec">
+                            <a href="#" class="blog-item-info">
+                                <div class="blog-item">
+                                    <div class="blog-img">
+                                        <img src="images/blog-1.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="blog-info">
+                                    <div class="blog-name">
+                                        <span>Magento | 08 JAN 2019</span>
+                                    </div>
+                                    <div class="blog-text">
+                                        <span>Magento 1 support will end in 2020. What next ?</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 blog-sec">
+                            <a href="#" class="blog-item-info">
+                                <div class="blog-item">
+                                    <div class="blog-img">
+                                        <img src="images/blog-2.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="blog-info">
+                                    <div class="blog-name">
+                                        <span>Akeneo | 25 Jun 2019</span>
+                                    </div>
+                                    <div class="blog-text">
+                                        <span>How to reduce product returns with a PIM system ?</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 blog-sec">
+                            <a href="#" class="blog-item-info">
+                                <div class="blog-item">
+                                    <div class="blog-img">
+                                        <img src="images/blog-3.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="blog-info">
+                                    <div class="blog-name">
+                                        <span>Magento | 07 may 2019</span>
+                                    </div>
+                                    <div class="blog-text">
+                                        <span>Buy online pick up in store - New shipping method to introduce in your Magento 2 store.</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section footer-sec bg-primary">
+             <div class="container  text-center">
+                 <div class="what-new">
+                    <span class="txt-alt text-uppercase">so what's next?</span>
+                    <h4 class="text-uppercase sub-title">Just reach out! <a href="#" class="txt-secondary lets-connect data-transform"><span data-hover="Let's connect">Let's connect</span></a></h4>
+                 </div>
+
+             </div>
+             <div class="footer-part">
+                 <div class="holder-md">
+                     <div class="row">
+                         <div class="col-md-3 col-sm-6">
+                             <ul>
+                                 <li><a href="https://www.ziffity.com/about-us/" class="line-effect">About</a></li>
+                                 <li><a href="https://www.ziffity.com/blog/" class="line-effect">Blog</a></li>
+                                 <li><a href="http://careers.ziffity.com/" class="line-effect">Careers</a></li>
+                                 <li><a href="https://www.ziffity.com/contact-us/" class="line-effect">Contact</a></li>
+                                 <li><a href="https://www.ziffity.com/privacy-policy/" class="line-effect">Privacy Policy</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-md-3 col-sm-6">
+                             <ul>
+                                 <li><a href="#" class="line-effect">Digital</a></li>
+                                 <li><a href="https://www.ziffity.com/product-engineering/" class="line-effect">Product Engineering</a></li>
+                                 <li><a href="https://www.ziffity.com/technology/devops-services/" class="line-effect">Cloud &amp; DevOps</a></li>
+                                 <li><a href="#" class="line-effect">Automation</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-md-3 col-sm-6">
+                             <ul>
+                                <li><a href="https://www.ziffity.com/magento-ecommerce-services/" class="line-effect">Magento Services</a></li>
+                                <li><a href="#" class="line-effect">Akeneo PIM</a></li>
+                                <li><a href="#" class="line-effect">AEM</a></li>
+                                <li><a href="#" class="line-effect">AI Chatbots</a></li>
+                                <li><a href="#" class="line-effect">QA Testing</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-md-3 col-sm-6">
+                             <ul>
+                                <li><a href="tel:++1-415-692-5513" class="line-effect">+1-415+692-5513</a></li>
+                                <li><a href="tel:++91-44-42695978" class="line-effect">+91-44-42695978</a></li>
+                                <li><a href="contactus@ziffity.com" class="line-effect">contactus@ziffity.com</a></li>
+                                <li>
+                                    <span>FOLLOW US ON</span>
+                                    <ul class="social-links">
+                                        <li><a target="_blank" href="https://twitter.com/ziffity?lang=en" class="twitter">Twitter</a></li>
+                                        <li><a target="_blank" href="https://www.linkedin.com/company/ziffity" class="linkedin">LinkedIn</a></li>
+                                    </ul>
+                                </li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+            <div class="copyright-sec txt-alt">
+                <span>Copyright &copy; 2019 Ziffity Solutions LLC.All Rights Reserved</span>
+            </div>
+        </section>
+        <div class="progress-page ">
+            <div class="scrolltotop is-active is-visible icon-arrow-up" data-tooltip="Back to top" data-placement="top">
+            </div>
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 29.279;"/>
+            </svg>
+        </div>
+
+    <div id="page-lines" class="white">
+        <div class="container page-lines">
+            <div class="page-lines-line"></div>
+            <div class="page-lines-line"></div>
+            <div class="page-lines-line"></div>
+            <div class="page-lines-line"></div>
+            <div class="page-lines-line"></div>
+            <div id="page-scroll-line"></div>
+        </div>
+    </div>
 </div>
-<div id="page-lines" class="white">
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-    <div class="page-lines-line"></div>
-</div>
-<div id="page-scroll-line"></div>
+
+
+
+
+
 <!-- partial -->
   <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/THREE.OrbitControls.js'></script> -->
-<script  src="js/plugin.js"></script>
+<script type="text/javascript" src="js/dat.gui.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script src="js/fullpage.min.js"></script>
+<script src="js/jquery.fullpage.extensions.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
 <script src="js/custom.js"></script>
-
 </body>
 </html>

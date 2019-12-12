@@ -71,7 +71,7 @@ $(document).ready(function(){
 
     var delay = $('.what-we-do-content span').last().attr('data-wow-delay');
     var delayTime = parseFloat(delay);
-    var time = delayTime + 2.0;
+    var time = delayTime + 5.0;
     if($('.what-we-do-content span').last().attr('data-wow-delay') === delay ) {
         setTimeout(function(){
             $('.what-we-do-content .content-inner span').addClass('active');
@@ -285,6 +285,13 @@ $(document).ready(function(){
     );
     wow.init();
 
+    $('.home .main').fullpage({
+        scrollBar: true,
+        responsiveWidth:767,
+        scrollingSpeed: 1000,
+        navigation: false
+    });
+
    //global variables
    var responsiveflag = false;
 
@@ -296,16 +303,11 @@ $(document).ready(function(){
        if (($(window).width()) <= 767 && responsiveflag == false)
        {           
            responsiveflag = true;
-           fullpage_api.destroy('all');
+           //fullpage_api.destroy('all');
        }
        else if (($(window).width()) >= 768)
        {
-        $('.home .main').fullpage({
-            scrollBar: true,
-            responsiveWidth:767,
-            scrollingSpeed: 500,
-            navigation: false
-          });
+
        }
    }
    /*--------------------------------------------------
