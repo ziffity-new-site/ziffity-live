@@ -285,11 +285,20 @@ $(document).ready(function(){
     );
     wow.init();
 
-    $('.home .main').fullpage({
-        scrollBar: true,
-        responsiveWidth:767,
-        scrollingSpeed: 1000,
-        navigation: false
+    if($('.home .main').length) {
+        $('.home .main').fullpage({
+            scrollBar: true,
+            responsiveWidth:767,
+            scrollingSpeed: 1000,
+            navigation: false
+        });
+    }
+
+
+    $('.platform-name').each(function () {
+         var elm = $(this).find('h6');
+         color = elm.attr('data-color');
+         elm.css('color', color);
     });
 
    //global variables
