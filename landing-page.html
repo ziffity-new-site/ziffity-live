@@ -12,27 +12,26 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/effects.css">
   <link rel="stylesheet" href="css/fonts.css" >
-  <link rel="stylesheet" href="css/fullpage.min.css">
     <!--<link rel="stylesheet" href="css/onepage-scroll.css">-->
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.4/jquery.fullPage.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-  <script src="js/fullpage.min.js"></script>
-    <!--<script src="js/jquery.onepage-scroll.min.js"></script>-->
-  <script type="text/javascript" src="js/dat.gui.min.js"></script>  
   <style>
     @import url("https://use.typekit.net/zpv6dck.css");    
   </style>
 
-
+    <link rel="icon" href="https://www.ziffity.com/wp-content/uploads/2018/07/ziffity_logo_favicon.jpg" sizes="32x32" />
+    <link rel="icon" href="https://www.ziffity.com/wp-content/uploads/2018/07/ziffity_logo_favicon.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="https://www.ziffity.com/wp-content/uploads/2018/07/ziffity_logo_favicon.jpg" />
+    <meta name="msapplication-TileImage" content="https://www.ziffity.com/wp-content/uploads/2018/07/ziffity_logo_favicon.jpg" />
 </head>     
 <body>
 <!-- partial:index.partial.html -->
 <header class="site-header">
     <div class="container head-flex">
         <div class="logo-wrap">
-            <a href="#" class="logo">
+            <a href="/" class="logo">
                 <img class="white" src="images/logo-ziffity-white.png"/>
                 <img class="black" src="images/logo-ziffity-black.png"/>
                 
@@ -80,7 +79,7 @@
                     <a href="#" class="platform-name">
                         <img src="images/logo-magento.png" alt="" />
                         <div class="go-to-platform">
-                            <h6>MAGENTO</h6>
+                            <h6 data-color="#f26322">MAGENTO</h6>
                             <span class="icon-arrow-right"></span>
                         </div>
                     </a>
@@ -89,7 +88,7 @@
                     <a href="#" class="platform-name">
                         <img src="images/logo-akeneo.png" alt="" />
                         <div class="go-to-platform">
-                            <h6>AKENEO</h6>
+                            <h6 data-color="#52267d">AKENEO</h6>
                             <span class="icon-arrow-right"></span>
                         </div>
                     </a>
@@ -98,7 +97,7 @@
                     <a href="#" class="platform-name">
                         <img src="images/logo-wordpress.png" alt="" />
                         <div class="go-to-platform">
-                                <h6>WORDPRESSS</h6>
+                                <h6 data-color="#33373c">WORDPRESSS</h6>
                                 <span class="icon-arrow-right"></span>
                             </div>
                         </a>
@@ -107,7 +106,7 @@
                     <a href="#" class="platform-name">
                         <img src="images/logo-drupal.png" alt="" />
                         <div class="go-to-platform">
-                                <h6>DRUPAL</h6>
+                                <h6 data-color="#23a0dc">DRUPAL</h6>
                                 <span class="icon-arrow-right"></span>
                             </div>
                         </a>
@@ -116,7 +115,7 @@
                         <a href="#" class="platform-name">
                             <img src="images/logo-adobe-experience-manager.png" alt="" />
                             <div class="go-to-platform">
-                                    <h6>ADOBE EXPERIENCE MANAGER</h6>
+                                <h6 data-color="#e9b889">ADOBE EXPERIENCE MANAGER</h6>
                                     <span class="icon-arrow-right"></span>
                                 </div>
                             </a>
@@ -125,7 +124,7 @@
                     <a href="#" class="platform-name">
                         <img src="images/logo-commerce-cloud.png" alt="" />
                         <div class="go-to-platform">
-                                <h6>ADOBE COMMERCE CLOUD</h6>
+                                <h6 data-color="#ef0d33">ADOBE COMMERCE CLOUD</h6>
                                 <span class="icon-arrow-right"></span>
                             </div>
                         </a>
@@ -134,7 +133,7 @@
                     <a href="#" class="platform-name">
                         <img src="images/logo-hubspot.png" alt="" />
                         <div class="go-to-platform">
-                            <h6>HUBSPOT</h6>
+                            <h6 data-color="#ff8461">HUBSPOT</h6>
                             <span class="icon-arrow-right"></span>
                         </div>
                     </a>
@@ -143,7 +142,7 @@
                     <a href="#" class="platform-name">
                         <img src="images/logo-marketo.png" alt="" />
                         <div class="go-to-platform">
-                            <h6>MARKETO</h6>
+                            <h6 data-color="#5e4a9b">MARKETO</h6>
                             <span class="icon-arrow-right"></span>
                         </div>
                     </a>
@@ -152,7 +151,7 @@
                     <a href="#" class="platform-name">
                         <img src="images/logo-dotdigital.png" alt="" />
                         <div class="go-to-platform">
-                            <h6>DOTDIGITAL</h6>
+                            <h6 data-color="#7fc14a">DOTDIGITAL</h6>
                             <span class="icon-arrow-right"></span>
                         </div>
                     </a>
@@ -161,7 +160,7 @@
                     <a href="#" class="platform-name">
                         <img src="images/logo-adobe-campaign.png" alt="" />
                         <div class="go-to-platform">
-                            <h6>ADOBE CAMPAIGN</h6>
+                            <h6 data-color="#d7d300">ADOBE CAMPAIGN</h6>
                             <span class="icon-arrow-right"></span>
                         </div>
                     </a>
@@ -254,10 +253,8 @@
   <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/THREE.OrbitControls.js'></script> -->
 
-<script src="js/script.js"></script>
 <script src="js/modernizr.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
