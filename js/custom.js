@@ -289,7 +289,7 @@ $(document).ready(function(){
         $('.home .main').fullpage({
             scrollBar: true,
             responsiveWidth:767,
-            scrollingSpeed: 1000,
+            scrollingSpeed: 700,
             navigation: false
         });
     }
