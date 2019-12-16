@@ -167,21 +167,32 @@ $(document).ready(function(){
         asNavFor: '.image-slider, .dynamic-background'
     });
 
+    $('.service-sec-slider').slick({
+        autoplay:false,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        autoplaySpeed: 5000,
+        fade: true,
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+        asNavFor: '.dynamic-background'    
+    });
 
-    jQuery(".content-slider").on("init", function (e, slick) {
+
+    jQuery(".service-sec-slider").on("init", function (e, slick) {
         var $firstAnimatingElements = jQuery(
-            ".content-slider .slick-slide:first-child"
+            ".service-sec-slider .slick-slide:first-child"
         ).find("[data-animation]");
         doAnimations($firstAnimatingElements);
     });
-    jQuery(".content-slider").on("beforeChange", function (
+    jQuery(".service-sec-slider").on("beforeChange", function (
         e,
         slick,
         currentSlide,
         nextSlide
     ) {
         var $animatingElements = jQuery(
-            '.content-slider .slick-slide[data-slick-index="' + nextSlide + '"]'
+            '.service-sec-slider .slick-slide[data-slick-index="' + nextSlide + '"]'
         ).find("[data-animation]");
         doAnimations($animatingElements);
     });
@@ -249,7 +260,17 @@ $(document).ready(function(){
                       infinite: true,
                       dots: true
                   }
-              }]
+              },
+              {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            ]
       }); 
 
       
