@@ -1532,7 +1532,7 @@ nav.navigation ul li {
   transform: rotate(-45deg);
 }
 /******* platform page ********/
-.platform-page,.services-page {
+.navigation-page {
    padding-top: 200px;
 }
 .platform-page h3 {
@@ -1666,6 +1666,75 @@ nav.navigation ul li {
     width: 500px;
     height: auto;
 }
+/******* eCommerce page ********/
+.ecommerce-page .ecommerce-sec {
+  margin-top: 50px;
+}
+.ecommerce-page .top-sec h5 {
+  margin: 0;
+}
+.ecommerce-page .ecommerce-growth {
+  background: #fff;
+  padding: 40px;  
+  margin-right: 10px;
+  color: #777;
+  position: relative;
+  height: 100%;
+}
+.ecommerce-page .ecommerce-growth:before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #ef0e34;
+    transition: all 0.5s ease;
+}
+.ecommerce-page .ecommerce-growth:hover:before {
+  width: 100%;
+}
+.go-arrow {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.ecommerce-page .ecommerce-growth:hover .go-arrow {
+  color: #ef0e34;
+}
+.ecommerce-page .ecommerce-growth  p {
+  color: #777;  
+}
+.ecommerce-page .ecommerce-growth  ul {
+  margin-top: 20px;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.ecommerce-page .go-arrow {
+  color: #000;
+  font-size: 20px;
+}
+.ecommerce-page .top-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ecommerce-page .bottom-sec {
+  border-top: 1px solid #777;
+  padding: 30px 0;
+}
+.ecommerce-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ecommerce-wrapper .ecommerce-inner {
+  margin-bottom: 40px;
+}
+
+
+
+
+
 @media screen and (min-width: 1350px){
   .holder-lg {
     max-width: 1370px;
