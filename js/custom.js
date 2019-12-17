@@ -69,6 +69,7 @@ $(document).ready(function(){
     });
 
 
+    $('.what-we-do-content .content-inner span').removeClass('active');
     var delay = $('.what-we-do-content span').last().attr('data-wow-delay');
     var delayTime = parseFloat(delay);
     var time = delayTime + 5.0;
@@ -146,26 +147,6 @@ $(document).ready(function(){
         cssEase: 'linear',
         asNavFor: '.services-item-slider'
     });
-    $('.image-slider').slick({
-        autoplay:false,
-        infinite: true,
-        arrows:false,
-        speed: 500,
-        autoplaySpeed: 5000,
-        fade: true,
-        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-        asNavFor: '.content-slider, .dynamic-background'
-    });
-    $('.content-slider').slick({
-        autoplay:false,
-        infinite: true,
-        arrows:true,
-        speed: 500,
-        autoplaySpeed: 5000,
-        fade: true,
-        cssEase: 'linear',
-        asNavFor: '.image-slider, .dynamic-background'
-    });
 
     $('.service-sec-slider').slick({
         autoplay:false,
@@ -229,15 +210,39 @@ $(document).ready(function(){
     })      
     $('.our-service-blog').mouseleave(function(){
         $(this).removeClass('active');
-    })   
+    });
+
+
+    var $slick_slider = $('.our-works-banner');
+
+    $( window ).scroll( function() {
+        clearTimeout( $.data( this, 'scrollTimer') );
+        $.data( this, 'scrollTimer', setTimeout( function() {
+            setAutoplay();
+        }, 250 ) );
+    } );
+
+    function setAutoplay() {
+        $slick_slider.each( function() {
+            $( this ).slick( 'setOption', 'autoplay', isScrolledIntoView( $( this ) ), true );
+        } );
+    }
+
+    function isScrolledIntoView( elem ) {
+        var docViewTop = $( window ).scrollTop();
+        var docViewBottom = docViewTop + $( window ).height();
+        var elemTop = $( elem ).offset().top;
+        var elemBottom = elemTop + $( elem ).height();
+        return ( ( elemBottom <= docViewBottom ) && ( elemTop >= docViewTop ) );
+    }
+
     $('.our-works-banner').slick({
         dots: true,
         dotsClass: 'slick-dots dotstyle-dotstroke',
-        autoplay:true,
         infinite: true,
         arrows:false,
         speed: 500,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         fade: true
       }); 
     
