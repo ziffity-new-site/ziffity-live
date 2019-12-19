@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f5ec61-b804-4562-ac93-e8c129b236e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/automation.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cloud and devops.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/creative-design.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/development.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/digital-marketing.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/discovery.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/integration.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/managed-services.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eCommerce-page_old.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/work-kurtgeiger.jpg" afterPath="$PROJECT_DIR$/images/work-kurtgeiger.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eCommerce-page.html" afterPath="$PROJECT_DIR$/eCommerce-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="1937" column="47" lean-forward="false" selection-start-line="1937" selection-start-column="47" selection-end-line="1937" selection-end-column="47" />
+            <state relative-caret-position="318">
+              <caret line="178" column="9" lean-forward="true" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -114,12 +122,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eCommerce-page.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eCommerce-page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eCommerce-page.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
               <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-              <folding />
+              <folding>
+                <marker date="1576769133049" expanded="true" signature="18606:21668" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="18648:21509" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="18684:21494" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="18718:21475" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="18786:19437" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="18815:19410" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="19505:19957" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="19534:19930" ph="..." />
+                <marker date="1576769133049" expanded="false" signature="19782:19787" ph="&amp;" />
+                <marker date="1576769133049" expanded="true" signature="20025:20479" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="20054:20452" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="20547:21452" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="20576:21425" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="20936:21395" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="21050:21362" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="21552:21654" ph="..." />
+                <marker date="1576769133049" expanded="false" signature="21581:21587" ph="©" />
+                <marker date="1576769133049" expanded="true" signature="21701:22144" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="21818:21833" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="21934:22133" ph="..." />
+                <marker date="1576769133049" expanded="false" signature="22008:22116" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="22191:22398" ph="..." />
+                <marker date="1576769133049" expanded="true" signature="22425:22614" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -204,8 +236,8 @@
         <option value="$PROJECT_DIR$/css/default.css" />
         <option value="$PROJECT_DIR$/css/component.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/eCommerce-page.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -316,12 +348,12 @@
       <workItem from="1576243588904" duration="2036000" />
       <workItem from="1576509635725" duration="244000" />
       <workItem from="1576563668423" duration="11589000" />
-      <workItem from="1576760056348" duration="8197000" />
+      <workItem from="1576760056348" duration="8261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171138000" />
+    <option name="totallyTimeSpent" value="171202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="-11" width="1889" height="1092" extended-state="6" />
@@ -726,14 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="1937" column="47" lean-forward="false" selection-start-line="1937" selection-start-column="47" selection-end-line="1937" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/gear.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
@@ -746,6 +770,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding>
+            <marker date="1576769133049" expanded="true" signature="18606:21668" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="18648:21509" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="18684:21494" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="18718:21475" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="18786:19437" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="18815:19410" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="19505:19957" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="19534:19930" ph="..." />
+            <marker date="1576769133049" expanded="false" signature="19782:19787" ph="&amp;" />
+            <marker date="1576769133049" expanded="true" signature="20025:20479" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="20054:20452" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="20547:21452" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="20576:21425" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="20936:21395" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="21050:21362" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="21552:21654" ph="..." />
+            <marker date="1576769133049" expanded="false" signature="21581:21587" ph="©" />
+            <marker date="1576769133049" expanded="true" signature="21701:22144" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="21818:21833" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="21934:22133" ph="..." />
+            <marker date="1576769133049" expanded="false" signature="22008:22116" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="22191:22398" ph="..." />
+            <marker date="1576769133049" expanded="true" signature="22425:22614" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="178" column="9" lean-forward="true" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
           <folding />
         </state>
       </provider>
