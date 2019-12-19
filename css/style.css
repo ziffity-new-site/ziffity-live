@@ -1910,288 +1910,104 @@ nav.navigation ul li {
 .logo-wrap .black {
   display: none;
 }
-/********* new ecommerce page **********/
-.p-50 {
-  padding: 50px;
-}
-.pt-50 {
-  padding-top: 50px;
-}
-.w-40 {
-  width: 40%;
-}
-.w-60 {
-  width: 60%;
-}
-    .w-70 {
-        width: 70%;
-    }
-           .floating-card {
-           position: absolute;
-           width: calc(50% - 30px);
-           margin: 0 15px;
-           min-height: 350px;
-           padding: 30px;
-           border-radius: 8px;
-           background: #333;
-           max-width: 300px;
-           -webkit-box-shadow: 0 20px 88px 0 rgba(0, 0, 0, .11);
-           box-shadow: 0 20px 88px 0 rgba(0, 0, 0, .11);
-           transition-duration: 0.3s;
-           -webkit-transition-duration: 0.3s;
-       }
-             
 
-          .floating-card-left p {
-            color: #777;
-          }
-          .floating-card h5,
-          .floating-card p,
-          .floating-card li  {
-            color: #fff;
-          }
-
-          .floating-card ul {
-            padding-left: 20px;
-            list-style-position: outside;
-        }
-                 .two-cards {
-                 position: relative;
-                 min-height: 570px;
-             }
-                    .has-cards:nth-child(odd) .floating-card.card-1 {
-                    left: 0;
-                    top: 0;
-                }
-                       .has-cards:nth-child(odd) .floating-card.card-2 {
-                       left: 50%;
-                       bottom: 0;
-                   }
-                          .has-cards:nth-child(even) .floating-card.card-1 {
-                          left: 0;
-                          bottom: 0;
-                      }
-                             .has-cards:nth-child(even) .floating-card.card-2 {
-                             top: 90px;
-                             left: 50%;
-                         }
-                                .has-cards:nth-child(even) .floating-card.card-2:before {
-                                bottom: 0;
-                            }
-                                   /*
-    .floating-card.card-1:before {
-        content: '';
-        width: 350px;
-        height: 350px;
-        background: #daf8fe;
-        position: absolute;
-        z-index: -1;
-        border-radius: 50%;
-        left: -40px;
-        bottom: -50px;
-        z-index: -9;
-    }
-    .floating-card.card-1:after {
-        content: '';
-        width: 350px;
-        height: 350px;
-        background: #e7fff9;
-        position: absolute;
-        z-index: -2;
-        border-radius: 50%;
-        left: 190px;
-        bottom: -160px;
-    } */
-                                                    .two-cards:before {
-                                                    content: '';
-                                                    width: 400px;
-                                                    height: 400px;
-                                                    background: #daf8fe;
-                                                    position: absolute;
-                                                    z-index: -1;
-                                                    border-radius: 50%;
-                                                    left: -40px;
-                                                    bottom: 100px;
-                                                }
-                                                       .two-cards:after {
-                                                       content: '';
-                                                       width: 400px;
-                                                       height: 400px;
-                                                       background: #e7fff9;
-                                                       position: absolute;
-                                                       z-index: -2;
-                                                       border-radius: 50%;
-                                                       left: 270px;
-                                                       bottom: 190px;
-                                                   }
-                                                          .has-cards:nth-child(even) .two-cards:after {
-                                                          bottom: -50px;
-                                                      }
-                                                             .has-cards:nth-child(even) .floating-card.card-1:after {
-                                                             bottom: 160px;
-                                                         }
-                                                                .banner:before {
-                                                                background: url(/wp-content/uploads/2018/10/splat1.png);
-                                                                content: '';
-                                                                position: absolute;
-                                                                right: -140px;
-                                                                top: -70%;
-                                                                width: 50%;
-                                                                height: 100%;
-                                                                background-size: cover;
-                                                                z-index: -1;
-                                                            }
-                                                                   .banner:after {
-                                                                   background: url(/wp-content/uploads/2018/10/splat2.png);
-                                                                   content: '';
-                                                                   position: absolute;
-                                                                   left: -140px;
-                                                                   top: -70%;
-                                                                   width: 50%;
-                                                                   height: 100%;
-                                                                   background-size: cover;
-                                                                   z-index: -1;
-                                                               }
-                                                                      .banner {
-                                                                      margin-top: 80px;
-                                                                  }
-                                                                         .sec-title {
-                                                                         margin-top: 50px;
-                                                                     }
-                                                                            span.blog-tag {
-                                                                            position: absolute;
-                                                                            left: 0;
-                                                                            padding: 10px;
-                                                                            font-size: 12px;
-                                                                            background: #fff;
-                                                                            bottom: 0;
-                                                                        }
-                                                                               .has-cards .d-flex {
-                                                                               align-items: center;
-                                                                           }                                                                               
-                                                                                     .img-02-custom-development,
-                                                                                                                        .img-03-cross-platform-migration,
-                                                                                                                                                              .img-04-magento-1-to-2-migration,
-                                                                                                                                                                                                    .img-05-elasticsearch,
-                                                                                                                                                                                                                               .img-06-3rd-party,
-                                                                                                                                                                                                                                                      .img-07-erp,
-                                                                                                                                                                                                                                                                       .img-08-crm,
-                                                                                                                                                                                                                                                                                        .img-09-ui-development,
-                                                                                                                                                                                                                                                                                                                    .img-10-magento-backend-development,
-                                                                                                                                                                                                                                                                                                                                                             .img-11-multilingual,
-                                                                                                                                                                                                                                                                                                                                                                                       .img-12-one-website,
-                                                                                                                                                                                                                                                                                                                                                                                                               
-                                                                                                                                                                                                                                                                                                                                                                                                                       .img-02-custom-development {
-                                                                                                                                                                                                                                                                                                                                                                                                                       background-position: -0px -0px;
-                                                                                                                                                                                                                                                                                                                                                                                                                       width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                       height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                   }
-                                                                                                                                                                                                                                                                                                                                                                                                                          .img-03-cross-platform-migration {
-                                                                                                                                                                                                                                                                                                                                                                                                                          background-position: -52px -0px;
-                                                                                                                                                                                                                                                                                                                                                                                                                          width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                          height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                      }
-                                                                                                                                                                                                                                                                                                                                                                                                                             .img-04-magento-1-to-2-migration {
-                                                                                                                                                                                                                                                                                                                                                                                                                             background-position: -104px -0px;
-                                                                                                                                                                                                                                                                                                                                                                                                                             width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                             height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                                                                                                                                                                                .img-05-elasticsearch {
-                                                                                                                                                                                                                                                                                                                                                                                                                                background-position: -0px -52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                   .img-06-3rd-party {
-                                                                                                                                                                                                                                                                                                                                                                                                                                   background-position: -52px -52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                   width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                   height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                               }
-                                                                                                                                                                                                                                                                                                                                                                                                                                      .img-07-erp {
-                                                                                                                                                                                                                                                                                                                                                                                                                                      background-position: -104px -52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                      width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                      height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                  }
-                                                                                                                                                                                                                                                                                                                                                                                                                                         .img-08-crm {
-                                                                                                                                                                                                                                                                                                                                                                                                                                         background-position: -0px -104px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                         width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                         height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                                                                                                                                                                                            .img-09-ui-development {
-                                                                                                                                                                                                                                                                                                                                                                                                                                            background-position: -52px -104px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                            width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                            height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                               .img-10-magento-backend-development {
-                                                                                                                                                                                                                                                                                                                                                                                                                                               background-position: -104px -104px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                               width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                               height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                           }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  .img-11-multilingual {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  background-position: -0px -156px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                              }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                     .img-12-one-website {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                     background-position: -52px -156px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                     width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                     height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        .implementation {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        background-position: -104px -156px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        width: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        height: 52px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                           @media (max-width: 1200px) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               .floating-card {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   position: unset;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   min-width: 330px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   margin: 30px auto;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          .has-cards:nth-child(even) .two-cards:after {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      bottom: 200px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
-    }
-           @media (max-width: 1400px) {
-                                               .has-cards .w-50:first-of-type {
-                                                   width: 40%;
-                                               }
-                                                          .has-cards .w-50:nth-of-type(2) {
-                                                      width: 60%;
-                                                  }
-    }
-           @media (max-width: 992px) {
-                                              .has-cards .w-50 {
-                                                  min-width: 100%;
-                                              }
-    }
-           @media (max-width: 768px) {
-                                              .mob-text-center {
-                                                  text-align: center;
-                                              }
-                                                         .has-cards .floating-card {
-                                                     min-width: 100%;
-                                                     position: unset;
-                                                     margin: 30px 0;
-                                                 }
-                                                            .has-cards:nth-child(even) .floating-card.card-2:before {
-                                                        bottom: 140px;
-                                                    }
-                                                               .banner {
-                                                           margin-top: 0;
-                                                       }
-                                                                  .min-h140 {
-                                                              min-height: auto;
-                                                          }
-                                                          .post-content {
-                                                              max-width: 400px;
-                                                          }
-    }
-           .min-h140 {
-           min-height: 140px;
-       }
-.our-vision p a{
-vertical-align: middle;
+.animsition-overlay-slide {
+  z-index: 9999 !important;
 }
-.sec-bottom{
-margin-bottom: 0 !important;
+
+.animsition-overlay-slide {
+  background: #333 !important;
+}
+
+.md-modal .modal-header {
+  padding: 0;
+  border: none;
+}
+
+.modal-header .md-close {
+  background: #333;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #ffffff;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 2;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+}
+
+.md-modal .md-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.md-modal .md-content > div {
+  padding: 0;
+}
+
+.md-modal .md-content h2 {
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+
+
+
+.md-modal .md-content p {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.counter-label {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.counter {
+  display: inline-block;
+}
+
+.counter-label {
+  background: #000;
+  padding: 10px;
+}
+
+.counter-label {}
+
+.counter {
+  width: 25%;
+  text-align: center;
+}
+
+.counter .counter-label {
+  height: 100px;
+}
+
+.counter + .counter .counter-label {
+  border-left: 1px solid #333;
+}
+
+.md-content {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+}
+
+div#timer {
+  display: table;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.counter-label {
+  display: table-cell;
+  vertical-align: middle;
+  width: 25%;
 }
