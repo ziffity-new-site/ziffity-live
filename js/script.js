@@ -1433,6 +1433,8 @@ canvas.addEventListener('mousemove', e => {
     //if (!pointer.down) return;
     let posX = scaleByPixelRatio(e.offsetX);
     let posY = scaleByPixelRatio(e.offsetY);
+    if (pointer == null)
+        pointer = new pointerPrototype();
     updatePointerMoveData(pointer, posX, posY);
 });
 
