@@ -536,12 +536,13 @@
     </div>
 </div>
 
-
+<button class="md-trigger" data-modal="modal-11">Super Scaled</button>
 <div class="md-modal md-effect-11" id="modal-11">
     <div class="modal-header">
-        <button class="md-close">x</button>
+    <button class="md-close">x</button>
     </div>
     <div class="md-content">
+
         <h2>Magento 1 support ends in</h2>
         <p>Magento 1 support will end in 2020</p>
             <div id="timer"></div>
@@ -552,8 +553,6 @@
 </div>
 
 <div class="md-overlay"></div>
-
-
 
 
 <!-- partial -->
@@ -572,15 +571,6 @@
 <!-- classie.js by @desandro: https://github.com/desandro/classie -->
 <script src="js/classie.js"></script>
 <script src="js/modalEffects.js"></script>
-
-<!-- for the blur effect -->
-<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-<script>
-    // this is important for IEs
-    var polyfilter_scriptpath = '/js/';
-</script>
-<script src="js/cssParser.js"></script>
-<script src="js/css-filters-polyfill.js"></script>
 <script src="js/custom.js"></script>
 <script>
 $(window).on('load',function(){
@@ -605,7 +595,12 @@ $(window).on('load',function(){
 });
 
 
-
+$('.md-close').on('click', function(){
+    if (localStorage.getItem('cookieSeen') != 'shown') {
+        $('.md-modal').removeClass('md-show');
+        localStorage.setItem('cookieSeen','shown')
+    };
+})
 
 
 </script>
