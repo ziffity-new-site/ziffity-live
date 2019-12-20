@@ -1933,6 +1933,10 @@ nav.navigation ul li {
 }
 
 
+.md-trigger {
+ position: fixed;
+  visibility: hidden;
+}
 
 .md-modal .md-content p {
   font-size: 16px;
