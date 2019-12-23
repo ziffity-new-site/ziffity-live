@@ -27,6 +27,8 @@ $(document).ready(function(){
     }
     bgSource(".our-works-banner .item");
 
+    bgSource(".ecommerce-sec .item");
+
 
    /* var arr = $(".what-do-sec h3").text().split(" ");
     var html="";
@@ -407,7 +409,9 @@ $(document).ready(function(){
                     scrollTop: 0
                 }, 1000);
                 return false;
-            })
-	  
-	  }//End FooterAppear
+            })	  
+      }//End FooterAppear
+   
+    
+ 
 });
