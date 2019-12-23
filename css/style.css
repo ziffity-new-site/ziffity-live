@@ -1296,7 +1296,9 @@ nav.navigation ul li {
 .ecommerce-sec .right-sec:hover .item {
   transform: scale(1.1);
 }
-
+.ecommerce-sec .item {
+  height: 500px;
+}
 
 
 

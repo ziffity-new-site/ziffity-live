@@ -27,6 +27,8 @@ $(document).ready(function(){
     }
     bgSource(".our-works-banner .item");
 
+    bgSource(".ecommerce-sec .item");
+
 
    /* var arr = $(".what-do-sec h3").text().split(" ");
     var html="";
@@ -409,23 +411,7 @@ $(document).ready(function(){
                 return false;
             })	  
       }//End FooterAppear
-
-      /****** convert image to background ********/
-      function bgSource(imgcontainer) {
-        $(imgcontainer).each(function() {
-            var img = $(this).find("img");
-            var height = img.height();
-            var img_src = img.attr("src");
-            $(this).css({
-                "background-image": "url(" + img_src + ")",
-                "background-size": "cover",
-                "background-repeat": "no-repeat",
-                "background-position": "center",
-                "height":"500"
-            });
-            img.hide()
-        })
-    }
-    bgSource(".ecommerce-sec .item");
+   
+    
  
 });
