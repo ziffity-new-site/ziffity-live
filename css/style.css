@@ -1788,6 +1788,13 @@ nav.navigation ul li {
 .ecommerce-sec .right-sec {
   order: 1;
 }
+.ecommerce-sec.even .left-sec {
+    padding: 0;
+}
+.ecommerce-sec .left-sec {
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
 }
 @media only screen and (max-width: 768px) {
   .services-item-slider,.services-digital .content-slider-wrap {
@@ -1891,11 +1898,14 @@ nav.navigation ul li {
 .footer-part ul{
   padding-left: 0;
 }
-/* .holder, .holder-sm, .holder-md {
-  padding: 0; 
-  } */
+.ecommerce-sec .item {
+  height: 250px;
+}
 
 }
+
+
+
 .logo-wrap .black {
   display: none;
 }
@@ -1971,9 +1981,6 @@ nav.navigation ul li {
   background: #000;
   padding: 10px;
 }
-
-.counter-label {}
-
 .counter {
   width: 25%;
   text-align: center;
