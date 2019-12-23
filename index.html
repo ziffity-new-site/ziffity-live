@@ -48,7 +48,7 @@
                     <a href="eCommerce-page.html" class="nav-link data-transform"><span data-hover="eCommerce">eCommerce</span></a>
                 </li>
                 <li>
-                    <a href="landing-page.html" class="nav-link data-transform"><span data-hover="Our Platforms">Our Platforms</span></a>
+                    <a href="platform.html" class="nav-link data-transform"><span data-hover="Our Platforms">Our Platforms</span></a>
                 </li>
                 <li>
                     <a href="https://www.ziffity.com/our-works/" class="nav-link data-transform"><span data-hover="Our works">Our works</span></a>
@@ -135,7 +135,7 @@
                                         <div class="service-heading" data-animation="fadeInDown" data-delay="1s">Our Platforms</div>
                                         <p data-animation="fadeInDown" data-delay="1.5s">Ziffity provides implementation, integration and managed services for platforms dedicated to content management, eCommerce and marketing automation.
                                         </p>
-                                        <a href="/ziffity-live/landing-page.html" alt="" class="right-arrow data-transform" data-animation="fadeInDown" data-delay="2s"><span data-hover="Learn More">Learn More</span></a>
+                                        <a href="/ziffity-live/platform.html" alt="" class="right-arrow data-transform" data-animation="fadeInDown" data-delay="2s"><span data-hover="Learn More">Learn More</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -490,8 +490,8 @@
                          <div class="footer-content col-md-3 col-sm-6 ">
                              <ul>
                                 <li><a href="https://www.ziffity.com/magento-ecommerce-services/" class="line-effect">Magento Services</a></li>
-                                <li><a href="#" class="line-effect">Akeneo PIM</a></li>
-                                <li><a href="#" class="line-effect">AI Chatbots</a></li>
+                                <li><a href="https://www.ziffity.com/product-information-management/" class="line-effect">Akeneo PIM</a></li>
+                                <li><a href="https://www.ziffity.com/technology/ai-chatbots/" class="line-effect">AI Chatbots</a></li>
                              </ul>
                          </div>
                          <div class="footer-content col-md-3 col-sm-6 ">
@@ -534,26 +534,6 @@
         </div>
     </div>
 </div>
-
-<button class="md-trigger" data-modal="modal-11">Super Scaled</button>
-<div class="md-modal md-effect-11" id="modal-11">
-    <div class="modal-header">
-    <button class="md-close">x</button>
-    </div>
-    <div class="md-content">
-
-        <h2>Magento 1 support ends in</h2>
-        <p>Magento 1 support will end in 2020</p>
-            <div id="timer"></div>
-
-        <a href="#" class="btn btn-blk-bor btn-flash text-uppercase">Migrate</a>
-
-    </div>
-</div>
-
-<div class="md-overlay"></div>
-
-
 <!-- partial -->
   <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/THREE.OrbitControls.js'></script> -->
@@ -567,41 +547,7 @@
 <script src="js/modernizr.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.hoverdir.js"></script>
-<!-- classie.js by @desandro: https://github.com/desandro/classie -->
-<script src="js/classie.js"></script>
-<script src="js/modalEffects.js"></script>
+
 <script src="js/custom.js"></script>
-<script>
-$(window).on('load',function(){
-
-    setTimeout(function(){
-        $('.md-modal').addClass('md-show');
-    }, 5000);
-    var countdown = new Date("Jun 20, 2020 15:37:25").getTime();
-    var x = setInterval(function(){
-        var now = new Date().getTime();
-        var distance = countdown - now;
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-        var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
-        var seconds = Math.floor(distance % (1000 *60) / 1000);
-        document.getElementById("timer").innerHTML = "<span class='days counter'><span class='counter-label'>"+days+"</span><span class='caption'>Days</span></span><span class='hours counter'><span class='counter-label'>"+hours+"</span><span class='caption'>Hours</span></span><span class='min counter'><span class='counter-label'>"+minutes+"</span><span class='caption'>Min</span></span><span class='sec counter'><span class='counter-label'>"+seconds+"</span><span class='caption'>Sec</span></span>"
-        if(distance < 0){
-            clearInterval(x);
-            document.getElementById("timer").style.display = "none";
-        }
-    },1000);
-});
-
-
-$('.md-close').on('click', function(){
-    if (localStorage.getItem('cookieSeen') != 'shown') {
-        $('.md-modal').removeClass('md-show');
-        localStorage.setItem('cookieSeen','shown')
-    };
-})
-
-
-</script>
 </body>
 </html>
