@@ -24,19 +24,19 @@ SOFTWARE.
 
 'use strict';
 
-const canvas =  document.getElementById('canvas');
+const canvas = document.getElementsByTagName('canvas')[0];
 resizeCanvas();
 
 let config = {
     SIM_RESOLUTION: 128,
     DYE_RESOLUTION: 1024,
     CAPTURE_RESOLUTION: 512,
-    DENSITY_DISSIPATION: 1.5,
-    VELOCITY_DISSIPATION: 0.5,
-    PRESSURE: 0.1,
+    DENSITY_DISSIPATION: 1,
+    VELOCITY_DISSIPATION: 0.2,
+    PRESSURE: 0.8,
     PRESSURE_ITERATIONS: 20,
     CURL: 30,
-    SPLAT_RADIUS: 0.05,
+    SPLAT_RADIUS: 0.25,
     SPLAT_FORCE: 6000,
     SHADING: true,
     COLORFUL: true,
@@ -47,12 +47,12 @@ let config = {
     BLOOM: true,
     BLOOM_ITERATIONS: 8,
     BLOOM_RESOLUTION: 256,
-    BLOOM_INTENSITY: 0.1,
-    BLOOM_THRESHOLD: 1,
+    BLOOM_INTENSITY: 0.8,
+    BLOOM_THRESHOLD: 0.6,
     BLOOM_SOFT_KNEE: 0.7,
     SUNRAYS: true,
     SUNRAYS_RESOLUTION: 196,
-    SUNRAYS_WEIGHT: 0.5,
+    SUNRAYS_WEIGHT: 1.0,
 }
 
 function pointerPrototype () {
@@ -124,7 +124,7 @@ function getWebGLContext (canvas) {
         formatR = getSupportedFormat(gl, gl.RGBA, gl.RGBA, halfFloatTexType);
     }
 
-    //ga('send', 'event', isWebGL2 ? 'webgl2' : 'webgl', formatRGBA == null ? 'not supported' : 'supported');
+    ga('send', 'event', isWebGL2 ? 'webgl2' : 'webgl', formatRGBA == null ? 'not supported' : 'supported');
 
     return {
         gl,
@@ -207,7 +207,7 @@ function startGUI () {
     captureFolder.add(config, 'TRANSPARENT').name('transparent');
     captureFolder.add({ fun: captureScreenshot }, 'fun').name('take screenshot');
 
-    /*let github = gui.add({ fun : () => {
+    let github = gui.add({ fun : () => {
         window.open('https://github.com/PavelDoGreat/WebGL-Fluid-Simulation');
         ga('send', 'event', 'link button', 'github');
     } }, 'fun').name('Github');
@@ -245,7 +245,7 @@ function startGUI () {
     app.__li.style.borderLeft = '3px solid #00FF7F';
     let appIcon = document.createElement('span');
     app.domElement.parentElement.appendChild(appIcon);
-    appIcon.className = 'icon app';*/
+    appIcon.className = 'icon app';
 
     if (isMobile())
         gui.close();
@@ -1429,14 +1429,21 @@ canvas.addEventListener('mousedown', e => {
 });
 
 canvas.addEventListener('mousemove', e => {
-    let pointer = pointers[0];
-    //if (!pointer.down) return;
     let posX = scaleByPixelRatio(e.offsetX);
     let posY = scaleByPixelRatio(e.offsetY);
+    let pointer = pointers.find(p => p.id == -1);
     if (pointer == null)
         pointer = new pointerPrototype();
     updatePointerMoveData(pointer, posX, posY);
 });
+
+/*canvas.addEventListener('mousemove', e => {
+    let pointer = pointers[0];
+    if (!pointer.down) return;
+    let posX = scaleByPixelRatio(e.offsetX);
+    let posY = scaleByPixelRatio(e.offsetY);
+    updatePointerMoveData(pointer, posX, posY);
+});*/
 
 window.addEventListener('mouseup', () => {
     updatePointerUpData(pointers[0]);

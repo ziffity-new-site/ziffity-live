@@ -903,6 +903,7 @@ nav.navigation ul li {
   display: flex;
   align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .service-sec-slider .slider-wrapper {
@@ -1707,9 +1708,6 @@ nav.navigation ul li {
   .services-digital .content-sec {
     padding: 40px;
   }
-  .service-sec-slider {
-    padding-bottom: 100px;
-  }
 }
 
 
@@ -1798,8 +1796,17 @@ nav.navigation ul li {
   .services-digital .content-sec{
     padding: 0;
   }
+
 }
 @media only screen and (max-width: 767px) {
+  .main-text h1 {
+    font-size: 65px;
+  }
+
+  .what-do-sec .what-we-do-content {
+    font-size: 25px;
+  }
+
   .our-service-blog:nth-child(3){
     margin-bottom: 40px;
   }
@@ -1813,9 +1820,6 @@ nav.navigation ul li {
   }
   .our-service-blog:nth-child(3){
     margin-bottom: 40px;
-  }
-  .service-item-content-inner {
-    display: block;  
   }
   .service-sec-slider .slider-wrapper {
      width: 100%;    
@@ -1941,6 +1945,10 @@ nav.navigation ul li {
 }
 
 
+.md-trigger {
+ position: fixed;
+  visibility: hidden;
+}
 
 .md-modal .md-content p {
   font-size: 16px;
